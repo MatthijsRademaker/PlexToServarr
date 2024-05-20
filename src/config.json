@@ -1,0 +1,20 @@
+{
+  "plex": {
+    "url": "https://metadata.provider.plex.tv",
+    "apiKey": "szj3KRKf9bDc2R_Nz3UV"
+  },
+  "radarr": {
+    "url": "http://localhost:7878/api/v3",
+    "apiKey": "cd79582bae7447ad8259696728ce39d1",
+    "dbUrl": "https://api.themoviedb.org/3/search/movie",
+    "dbApiKey": "45d2e13e4086ff60383ae6b06671365b",
+    "rootFolder": "M:\\"
+  },
+  "sonarr": {
+    "url": "http://localhost:8989/api/v3",
+    "apiKey": "2193a4e18dfd46d1a8644fd51af84462",
+    "dbUrl": "https://api4.thetvdb.com/v4/search?query=test&type=series",
+    "dbApiKey": "9ec90770-48d4-4141-8160-55d7d2b61c0e",
+    "rootFolder": "S:\\"
+  }
+}
