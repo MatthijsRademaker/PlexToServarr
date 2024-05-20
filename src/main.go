@@ -46,13 +46,16 @@ func main() {
 
 	plex.WaitUntilAvailable()
 
-	// config.Radarr.ProcessWatchList(plex.GetMovies(), "movie")
+	config.Radarr.ProcessWatchList(plex.GetMovies(), "movie")
 
 	config.Sonarr.ProcessWatchList(plex.GetShows())
 
 	c := cron.New()
 	c.AddFunc("@hourly", func() {
-		fmt.Printf("Found %d items in Plex watchlist\n", len(plex.Watchlist))
+
+		config.Radarr.ProcessWatchList(plex.GetMovies(), "movie")
+
+		config.Sonarr.ProcessWatchList(plex.GetShows())
 	})
 	c.Start()
 
