@@ -52,54 +52,6 @@ Root: HKA; Subkey: "Software\Classes\Applications\{#MyAppExeName}\SupportedTypes
 Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
-procedure InitializeWizard();
-var
-  AboutButton, CancelButton: TButton;
-  URLLabel: TNewStaticText;
-  BackgroundBitmapImage: TBitmapImage;
-  BackgroundBitmapText: TNewStaticText;
-begin
-  { Custom wizard pages }
-
-  CreateTheWizardPages;
-
-  { Other custom controls }
-
-  CancelButton := WizardForm.CancelButton;
-
-  AboutButton := TButton.Create(WizardForm);
-  AboutButton.Left := WizardForm.ClientWidth - CancelButton.Left - CancelButton.Width;
-  AboutButton.Top := CancelButton.Top;
-  AboutButton.Width := CancelButton.Width;
-  AboutButton.Height := CancelButton.Height;
-  AboutButton.Caption := '&About...';
-  AboutButton.OnClick := @AboutButtonOnClick;
-  AboutButton.Parent := WizardForm;
-
-  URLLabel := TNewStaticText.Create(WizardForm);
-  URLLabel.Caption := 'www.innosetup.com';
-  URLLabel.Cursor := crHand;
-  URLLabel.OnClick := @URLLabelOnClick;
-  URLLabel.Parent := WizardForm;
-  { Alter Font *after* setting Parent so the correct defaults are inherited first }
-  URLLabel.Font.Style := URLLabel.Font.Style + [fsUnderline];
-  URLLabel.Font.Color := clBlue;
-  URLLabel.Top := AboutButton.Top + AboutButton.Height - URLLabel.Height - 2;
-  URLLabel.Left := AboutButton.Left + AboutButton.Width + ScaleX(20);
-
-  BackgroundBitmapImage := TBitmapImage.Create(MainForm);
-  BackgroundBitmapImage.Left := 50;
-  BackgroundBitmapImage.Top := 90;
-  BackgroundBitmapImage.AutoSize := True;
-  BackgroundBitmapImage.Bitmap := WizardForm.WizardBitmapImage.Bitmap;
-  BackgroundBitmapImage.Parent := MainForm;
-
-  BackgroundBitmapText := TNewStaticText.Create(MainForm);
-  BackgroundBitmapText.Left := BackgroundBitmapImage.Left;
-  BackgroundBitmapText.Top := BackgroundBitmapImage.Top + BackgroundBitmapImage.Height + ScaleY(8);
-  BackgroundBitmapText.Caption := 'TBitmapImage';
-  BackgroundBitmapText.Parent := MainForm;
-end;
 
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent

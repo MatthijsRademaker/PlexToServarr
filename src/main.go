@@ -51,6 +51,9 @@ func main() {
 	config.Sonarr.ProcessWatchList(plex.GetShows())
 
 	c := cron.New()
+
+	// TODO run every 5 minutes
+	// TODO add cache for plex watchlist so no unnecessary requests are made
 	c.AddFunc("@hourly", func() {
 
 		config.Radarr.ProcessWatchList(plex.GetMovies(), "movie")
