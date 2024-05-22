@@ -23,10 +23,8 @@ type RadarrMedia struct {
 
 func (base *RadarrService) MapToMediaItem(item PlexItem, id int) RadarrMedia {
 	return RadarrMedia{
-		Title: item.Title,
-		// todo: QualityProfileId is an int but in radarrService.go it is a slice of QualityProfile
-		// How to support multiple quality profiles?
-		QualityProfileId: QUALITY_PROFILE,
+		Title:            item.Title,
+		QualityProfileId: base.QualityProfile.ID,
 		TmdbId:           id,
 		RootFolderPath:   base.RootFolder,
 		Monitored:        true,
@@ -43,7 +41,7 @@ func (radarr *RadarrService) ProcessWatchList(plexItems []PlexItem) {
 		return
 	}
 
-	endpoint := fmt.Sprintf("%s/%s?apikey=%s", radarr.Url, "diskspace", radarr.ApiKey)
+	endpoint := fmt.Sprintf("%s/ping?apikey=%s", radarr.Url, radarr.ApiKey)
 	waitUntilServiceAvailable(endpoint)
 	radarr.SetQualityProfileID()
 
@@ -111,7 +109,7 @@ func (radarr *RadarrService) FetchMedia(items []PlexItem) ([]RadarrMedia, error)
 
 func (radarr *RadarrService) AddMedia(media []RadarrMedia) error {
 	for _, item := range media {
-		endpoint := fmt.Sprintf("%s/movies?apikey=%s", radarr.Url, radarr.ApiKey)
+		endpoint := fmt.Sprintf("%s/api/v3/movie?apikey=%s", radarr.Url, radarr.ApiKey)
 		err := radarr.uploadMedia(item, endpoint)
 		if err != nil {
 			return err

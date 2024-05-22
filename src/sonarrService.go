@@ -25,7 +25,7 @@ type SonarrService struct {
 func (base *SonarrService) MapToMediaItem(item PlexItem, id int) SonarrMedia {
 	return SonarrMedia{
 		Title:            item.Title,
-		QualityProfileId: QUALITY_PROFILE,
+		QualityProfileId: base.QualityProfile.ID,
 		TvdbId:           id,
 		RootFolderPath:   base.RootFolder,
 		Monitored:        true,
@@ -43,7 +43,7 @@ func (sonarr *SonarrService) ProcessWatchList(plexItems []PlexItem) {
 		return
 	}
 
-	endpoint := fmt.Sprintf("%s/%s?apikey=%s", sonarr.Url, "diskspace", sonarr.ApiKey)
+	endpoint := fmt.Sprintf("%s/ping?apikey=%s", sonarr.Url, sonarr.ApiKey)
 	waitUntilServiceAvailable(endpoint)
 	sonarr.SetQualityProfileID()
 
@@ -144,7 +144,7 @@ func (sonarr *SonarrService) FetchMedia(items []PlexItem) ([]SonarrMedia, error)
 
 func (sonarr *SonarrService) AddMedia(media []SonarrMedia) error {
 	for _, item := range media {
-		endpoint := fmt.Sprintf("%s/%s?apikey=%s", sonarr.Url, "series", sonarr.ApiKey)
+		endpoint := fmt.Sprintf("%s/api/v3/series?apikey=%s", sonarr.Url, sonarr.ApiKey)
 		err := sonarr.uploadMedia(item, endpoint)
 		if err != nil {
 			return err

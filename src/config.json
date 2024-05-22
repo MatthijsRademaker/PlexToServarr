@@ -4,15 +4,23 @@
     "apiKey": "szj3KRKf9bDc2R_Nz3UV"
   },
   "radarr": {
-    "url": "http://localhost:7878/api/v3",
+    "url": "http://localhost:7878",
     "apiKey": "cd79582bae7447ad8259696728ce39d1",
     "dbApiKey": "45d2e13e4086ff60383ae6b06671365b",
-    "rootFolder": "M:\\"
+    "rootFolder": "M:\\",
+    "wantedQualityProfileFromConfig": {
+      "id": 7,
+      "name": "PreferredMovie"
+    }
   },
   "sonarr": {
-    "url": "http://localhost:8989/api/v3",
+    "url": "http://localhost:8989",
     "apiKey": "2193a4e18dfd46d1a8644fd51af84462",
     "dbApiKey": "9ec90770-48d4-4141-8160-55d7d2b61c0e",
-    "rootFolder": "S:\\"
+    "rootFolder": "S:\\",
+    "wantedQualityProfileFromConfig": {
+      "id": 7,
+      "name": "PreferredSeries"
+    }
   }
 }

@@ -13,11 +13,6 @@ type DbResult struct {
 	ID int `json:"id"`
 }
 
-type QualityProfile struct {
-	ID   int    `json:"id"`
-	Name string `json:"name"`
-}
-
 type ErrorResponse struct {
 	ErrorMessage string `json:"errorMessage"`
 }
@@ -28,7 +23,6 @@ var client = &http.Client{
 
 var (
 	LANGUAGE_PROFILE = 1
-	QUALITY_PROFILE  int
 )
 
 func main() {
