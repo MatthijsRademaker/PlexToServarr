@@ -36,9 +36,17 @@ func (base *SonarrService) MapToMediaItem(item PlexItem, id int) SonarrMedia {
 }
 
 func (sonarr *SonarrService) ProcessWatchList(plexItems []PlexItem) {
+
+	newItems := sonarr.GetNewItems(plexItems)
+	if len(newItems) == 0 {
+		log.Printf("No new shows to process")
+		return
+	}
+
 	endpoint := fmt.Sprintf("%s/%s?apikey=%s", sonarr.Url, "diskspace", sonarr.ApiKey)
 	waitUntilServiceAvailable(endpoint)
-	QUALITY_PROFILE = sonarr.getQualityProfileID()
+	sonarr.SetQualityProfileID()
+
 	media, err := sonarr.FetchMedia(plexItems)
 	if err != nil {
 		log.Fatalf("Failed to fetch media: %v", err)
@@ -48,6 +56,8 @@ func (sonarr *SonarrService) ProcessWatchList(plexItems []PlexItem) {
 	if err != nil {
 		log.Fatalf("Failed to add media: %v", err)
 	}
+
+	sonarr.ProcessedList = append(sonarr.ProcessedList, newItems...)
 }
 
 func (sonarr *SonarrService) QueryDb(item PlexItem, mediaType string) (int, error) {

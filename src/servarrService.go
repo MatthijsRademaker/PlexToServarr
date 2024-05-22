@@ -10,10 +10,12 @@ import (
 )
 
 type ServarrBase struct {
-	Url        string
-	ApiKey     string
-	DbApiKey   string
-	RootFolder string
+	Url            string
+	ApiKey         string
+	DbApiKey       string
+	RootFolder     string
+	ProcessedList  []PlexItem
+	QualityProfile []QualityProfile
 }
 
 func (base *ServarrBase) uploadMedia(media interface{}, endpoint string) error {
@@ -44,4 +46,38 @@ func (base *ServarrBase) uploadMedia(media interface{}, endpoint string) error {
 	}
 
 	return nil
+}
+
+func (base *ServarrBase) GetNewItems(listToProcess []PlexItem) []PlexItem {
+	filterFunc := func(item PlexItem) bool {
+		for _, processedItem := range base.ProcessedList {
+			if item.Title == processedItem.Title {
+				return false
+			}
+		}
+		return true
+	}
+	return filter(listToProcess, filterFunc)
+}
+
+func (servarr *ServarrBase) SetQualityProfileID() {
+	url := fmt.Sprintf("%s/qualityProfile?apikey=%s", servarr.Url, servarr.ApiKey)
+	resp, err := http.Get(url)
+	if err != nil {
+		log.Fatalf("Failed to get quality profiles: %v", err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		log.Fatalf("Failed to get quality profiles. Status code: %d", resp.StatusCode)
+	}
+
+	var profiles []QualityProfile
+	err = json.NewDecoder(resp.Body).Decode(&profiles)
+	if err != nil {
+		log.Fatalf("Failed to decode quality profiles: %v", err)
+	}
+
+	log.Fatal("Quality profile 'HD-1080p' not found")
+	servarr.QualityProfile = profiles
 }
