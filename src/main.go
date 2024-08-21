@@ -1,9 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
+
+	// "os"
 	"time"
 
 	"github.com/robfig/cron/v3"
@@ -26,12 +27,23 @@ var (
 )
 
 func main() {
+	// // Open the log file for writing
+	// logFile, err := os.OpenFile("app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+	// if err != nil {
+	// 	log.Fatalf("Failed to open log file: %v", err)
+	// }
+	// defer logFile.Close()
+
+	// // Set log output to the file
+	// log.SetOutput(logFile)
+
+	// Load configuration
 	config, err := loadConfig("config.json")
 	if err != nil {
 		log.Fatalf("Failed to load config: %v", err)
 	}
 
-	fmt.Printf("Config: %+v\n", config)
+	log.Printf("Config: %+v\n", config)
 
 	plex := PlexService{
 		url:    config.Plex.URL,
@@ -41,17 +53,22 @@ func main() {
 	plex.WaitUntilAvailable()
 
 	config.Radarr.ProcessWatchList(plex.GetMovies())
-
 	config.Sonarr.ProcessWatchList(plex.GetShows())
 
 	c := cron.New()
 
 	c.AddFunc("*/5 * * * *", func() {
+		log.Println("Fetching Plex watchlist")
+		plex.fetchPlexWatchlist()
+
+		log.Println("Processing Radarr watchlist")
 		config.Radarr.ProcessWatchList(plex.GetMovies())
 
+		log.Println("Processing Sonarr watchlist")
 		config.Sonarr.ProcessWatchList(plex.GetShows())
 	})
 	c.Start()
 
+	log.Println("Service started")
 	select {}
 }

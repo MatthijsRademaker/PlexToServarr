@@ -27,13 +27,14 @@ func (plex *PlexService) fetchPlexWatchlist() {
 	url := fmt.Sprintf("%s/library/sections/watchlist/all?X-Plex-Token=%s", plex.url, plex.apiKey)
 	resp, err := http.Get(url)
 	if err != nil {
-		log.Fatalf("Failed to fetch Plex watchlist: %v", err)
+		plex.WaitUntilAvailable()
+		plex.fetchPlexWatchlist()
 	}
 	defer resp.Body.Close()
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
-		log.Fatalf("Failed to read Plex watchlist response: %v", err)
+		log.Printf("Failed to read Plex watchlist response: %v", err)
 	}
 
 	var result struct {
@@ -42,7 +43,7 @@ func (plex *PlexService) fetchPlexWatchlist() {
 	}
 	err = xml.Unmarshal(body, &result)
 	if err != nil {
-		log.Fatalf("Failed to unmarshal Plex watchlist XML: %v", err)
+		log.Printf("Failed to unmarshal Plex watchlist XML: %v", err)
 	}
 
 	log.Printf("Found %d directories and %d videos in Plex watchlist", len(result.Directory), len(result.Video))
