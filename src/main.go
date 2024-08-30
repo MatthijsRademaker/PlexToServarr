@@ -1,71 +1,42 @@
 package main
 
 import (
+	"flag"
 	"log"
 	"net/http"
-
-	// "os"
 	"time"
 
 	"github.com/robfig/cron/v3"
 )
 
-type DbResult struct {
-	ID int `json:"id"`
-}
-
-type ErrorResponse struct {
-	ErrorMessage string `json:"errorMessage"`
-}
-
-var client = &http.Client{
+var defaultHttpClient = &http.Client{
 	Timeout: 5 * time.Second, // Set a timeout of 5 seconds
 }
 
-var (
-	LANGUAGE_PROFILE = 1
-)
-
 func main() {
-	// // Open the log file for writing
-	// logFile, err := os.OpenFile("app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
-	// if err != nil {
-	// 	log.Fatalf("Failed to open log file: %v", err)
-	// }
-	// defer logFile.Close()
+	// Define command-line flags
+	apiKey := flag.String("api-key", "", "API key for Overseer")
+	baseURL := flag.String("base-url", "", "Base URL for Overseer API")
+	cronSchedule := flag.String("cron", "*/5 * * * *", "Cron schedule for running the job")
 
-	// // Set log output to the file
-	// log.SetOutput(logFile)
+	// Parse the flags
+	flag.Parse()
 
-	// Load configuration
-	config, err := loadConfig("config.json")
-	if err != nil {
-		log.Fatalf("Failed to load config: %v", err)
+	// Check if required flags are provided
+	if *apiKey == "" || *baseURL == "" {
+		log.Fatal("API key and base URL are required. Use -api-key and -base-url flags.")
 	}
 
-	log.Printf("Config: %+v\n", config)
+	// Initialize OverseerService with command-line arguments
+	overseer := NewOverseerService(*apiKey, *baseURL)
 
-	plex := PlexService{
-		url:    config.Plex.URL,
-		apiKey: config.Plex.ApiKey,
-	}
+	// Initial run
+	overseer.RequestEntireWatchlist()
 
-	plex.WaitUntilAvailable()
-
-	config.Radarr.ProcessWatchList(plex.GetMovies())
-	config.Sonarr.ProcessWatchList(plex.GetShows())
-
+	// Set up cron job
 	c := cron.New()
-
-	c.AddFunc("*/5 * * * *", func() {
-		log.Println("Fetching Plex watchlist")
-		plex.fetchPlexWatchlist()
-
-		log.Println("Processing Radarr watchlist")
-		config.Radarr.ProcessWatchList(plex.GetMovies())
-
-		log.Println("Processing Sonarr watchlist")
-		config.Sonarr.ProcessWatchList(plex.GetShows())
+	c.AddFunc(*cronSchedule, func() {
+		overseer.RequestEntireWatchlist()
 	})
 	c.Start()
 

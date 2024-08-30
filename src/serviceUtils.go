@@ -26,7 +26,7 @@ func isServiceAvailable(url string) bool {
 		return false
 	}
 
-	resp, err := client.Do(req)
+	resp, err := defaultHttpClient.Do(req)
 	if err != nil {
 		if os.IsTimeout(err) {
 			log.Printf("Timeout error: %v", err)

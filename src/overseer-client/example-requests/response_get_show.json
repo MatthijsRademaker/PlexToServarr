@@ -1,0 +1,2796 @@
+{
+  "createdBy": [
+    {
+      "id": 3899830,
+      "credit_id": "666136bccc3f6c825f3f3e1c",
+      "name": "Matthew Inman",
+      "original_name": "Matthew Inman",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1512868,
+      "credit_id": "666136f1f56413a6da60a133",
+      "name": "Shane Kosakowski",
+      "original_name": "Shane Kosakowski",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episodeRunTime": [],
+  "firstAirDate": "2024-07-12",
+  "genres": [
+    {
+      "id": 16,
+      "name": "Animation"
+    },
+    {
+      "id": 35,
+      "name": "Comedy"
+    }
+  ],
+  "relatedVideos": [
+    {
+      "site": "YouTube",
+      "key": "IL9aRKOp15w",
+      "name": "A Message from Godcat",
+      "size": 1080,
+      "type": "Featurette",
+      "url": "https://www.youtube.com/watch?v=IL9aRKOp15w"
+    },
+    {
+      "site": "YouTube",
+      "key": "nw6iE7wh7Eg",
+      "name": "Hype Trailer",
+      "size": 1080,
+      "type": "Trailer",
+      "url": "https://www.youtube.com/watch?v=nw6iE7wh7Eg"
+    },
+    {
+      "site": "YouTube",
+      "key": "T3F0Nt6ssLU",
+      "name": "Official Trailer",
+      "size": 1080,
+      "type": "Trailer",
+      "url": "https://www.youtube.com/watch?v=T3F0Nt6ssLU"
+    },
+    {
+      "site": "YouTube",
+      "key": "yJMW_v9UvBA",
+      "name": "Official Teaser Trailer",
+      "size": 1080,
+      "type": "Trailer",
+      "url": "https://www.youtube.com/watch?v=yJMW_v9UvBA"
+    }
+  ],
+  "homepage": "https://www.netflix.com/title/81459282",
+  "id": 219532,
+  "inProduction": true,
+  "languages": ["en"],
+  "lastAirDate": "2024-07-12",
+  "name": "Exploding Kittens",
+  "networks": [
+    {
+      "id": 213,
+      "name": "Netflix",
+      "originCountry": "",
+      "logoPath": "/wwemzKWzjKYJFfCeiB57q3r4Bcm.png"
+    }
+  ],
+  "numberOfEpisodes": 9,
+  "numberOfSeasons": 1,
+  "originCountry": ["US"],
+  "originalLanguage": "en",
+  "originalName": "Exploding Kittens",
+  "tagline": "God and the Devil. Trapped in cat bodies.",
+  "overview": "It's the ultimate fight between good and evil when God and his nemesis, the spawn of Satan, are sent to Earth to live with humans — as talking cats.",
+  "popularity": 91.263,
+  "productionCompanies": [
+    {
+      "id": 168168,
+      "name": "Bandera Entertainment",
+      "originCountry": "US",
+      "logoPath": null
+    },
+    {
+      "id": 7076,
+      "name": "Chernin Entertainment",
+      "originCountry": "US",
+      "logoPath": "/8BFxn9NUWSgp0ndih569Gm62xiC.png"
+    },
+    {
+      "id": 227981,
+      "name": "Exploding Kittens",
+      "originCountry": "US",
+      "logoPath": null
+    },
+    {
+      "id": 233735,
+      "name": "Chomp City",
+      "originCountry": "US",
+      "logoPath": null
+    }
+  ],
+  "productionCountries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "contentRatings": {
+    "results": [
+      {
+        "descriptors": [],
+        "iso_3166_1": "SG",
+        "rating": "M18"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "US",
+        "rating": "TV-MA"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "PR",
+        "rating": "TV-MA"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "VI",
+        "rating": "TV-MA"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "AR",
+        "rating": "SAM 16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "AU",
+        "rating": "MA 15+"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "AT",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "BR",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "BG",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "CA",
+        "rating": "18+"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "CZ",
+        "rating": "15+"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "DK",
+        "rating": "15"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "FI",
+        "rating": "K16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "FR",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "DE",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "GR",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "HU",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "IN",
+        "rating": "A"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "IE",
+        "rating": "15"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "IL",
+        "rating": "15+"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "MY",
+        "rating": "18"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "MX",
+        "rating": "B-15"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "MA",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "NL",
+        "rating": "12"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "NZ",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "NO",
+        "rating": "15"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "PL",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "PT",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "RO",
+        "rating": "15"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "SK",
+        "rating": "15"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "ZA",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "ES",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "SE",
+        "rating": "Från 15 år"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "TW",
+        "rating": "15+"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "UA",
+        "rating": "16+"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "GB",
+        "rating": "15"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "CH",
+        "rating": "16"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "KR",
+        "rating": "19"
+      },
+      {
+        "descriptors": [],
+        "iso_3166_1": "RU",
+        "rating": "18+"
+      }
+    ]
+  },
+  "spokenLanguages": [
+    {
+      "englishName": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "seasons": [
+    {
+      "airDate": "2024-07-12",
+      "episodeCount": 9,
+      "id": 326905,
+      "name": "Season 1",
+      "overview": "",
+      "seasonNumber": 1,
+      "posterPath": "/4WctqRtusYpTLHNkuVjQe4R51DZ.jpg"
+    }
+  ],
+  "status": "Returning Series",
+  "type": "Scripted",
+  "voteAverage": 8.145,
+  "voteCount": 38,
+  "backdropPath": "/65firYWt2FoK18KuYxnmHmVaEsL.jpg",
+  "lastEpisodeToAir": {
+    "id": 5469744,
+    "airDate": "2024-07-12",
+    "episodeNumber": 9,
+    "name": "The Westminster Human Show",
+    "overview": "Chaos brings the Higgins family closer together as Godcat and Devilcat face their final challenge: making humans go against their own nature.",
+    "productionCode": "",
+    "seasonNumber": 1,
+    "showId": 219532,
+    "voteAverage": 10,
+    "stillPath": "/llA0IQ1pDEKgxv020puPlgvSn9S.jpg"
+  },
+  "posterPath": "/4WctqRtusYpTLHNkuVjQe4R51DZ.jpg",
+  "credits": {
+    "cast": [
+      {
+        "character": "GodCat (voice)",
+        "creditId": "63d93339a6c1040093ce6635",
+        "id": 192944,
+        "name": "Tom Ellis",
+        "order": 0,
+        "gender": 2,
+        "profilePath": "/zhjIyqpk5bsYgxsh5bSeS6VZtHm.jpg"
+      },
+      {
+        "character": "Greta (voice)",
+        "creditId": "63d9337b3dc31300864c568d",
+        "id": 209596,
+        "name": "Ally Maki",
+        "order": 1,
+        "gender": 1,
+        "profilePath": "/u3T3YRy3FAR1wQxmQI819yeP3PW.jpg"
+      },
+      {
+        "character": "Marv (voice)",
+        "creditId": "63d93387a9117f0083fee592",
+        "id": 1198148,
+        "name": "Mark Proksch",
+        "order": 2,
+        "gender": 2,
+        "profilePath": "/5sgun1ZeWUaoz5TSvC7rvYBeWCC.jpg"
+      },
+      {
+        "character": "Devilcat (voice)",
+        "creditId": "63d933973dc313007d807d17",
+        "id": 1395348,
+        "name": "Sasheer Zamata",
+        "order": 3,
+        "gender": 1,
+        "profilePath": "/gAnG6U9iXLHKUkWVoYZdkHVNrOD.jpg"
+      },
+      {
+        "character": "Abbie (voice)",
+        "creditId": "663d9c1ad6996c8da27ecd33",
+        "id": 26998,
+        "name": "Suzy Nakamura",
+        "order": 4,
+        "gender": 1,
+        "profilePath": "/AkPYH6DKr0Bhv9kA2PTSGjpi11P.jpg"
+      },
+      {
+        "character": "Travis (voice)",
+        "creditId": "663d9c5e0f2c7c19a6c76e08",
+        "id": 1114052,
+        "name": "Kenny Yates",
+        "order": 5,
+        "gender": 2,
+        "profilePath": null
+      },
+      {
+        "character": "(voice)",
+        "creditId": "6690e7b7056b67f79980971e",
+        "id": 78798,
+        "name": "Tom Kenny",
+        "order": 6,
+        "gender": 2,
+        "profilePath": "/kftXtExrcoTTjyeYmSXJ0Ogr3R7.jpg"
+      },
+      {
+        "character": "(voice)",
+        "creditId": "6690d6907d54b145289e228c",
+        "id": 59784,
+        "name": "Carlos Alazraqui",
+        "order": 500,
+        "gender": 2,
+        "profilePath": "/d2hufnjlfsZiY7N9NLZ6b7FE1IZ.jpg"
+      },
+      {
+        "character": "(voice)",
+        "creditId": "6690d6bd87d4d72d648093f2",
+        "id": 17414,
+        "name": "Jill Talley",
+        "order": 502,
+        "gender": 1,
+        "profilePath": "/x0r43qyI9KNEyb5RsF0MckqxgfM.jpg"
+      },
+      {
+        "character": "(voice)",
+        "creditId": "6690d956eb96fd5b09239b09",
+        "id": 89599,
+        "name": "Eric Bauza",
+        "order": 506,
+        "gender": 2,
+        "profilePath": "/afOlsVPQxbtkom604MeCemjlwEV.jpg"
+      },
+      {
+        "character": "(voice)",
+        "creditId": "6690d6a16950b84c81e11009",
+        "id": 1838652,
+        "name": "David Gborie",
+        "order": 501,
+        "gender": 2,
+        "profilePath": "/csoG0PKiB8lAB2wujErbcaQkolG.jpg"
+      },
+      {
+        "character": "(voice)",
+        "creditId": "6690d8050f7aaadbff2cdb49",
+        "id": 1404102,
+        "name": "Betsy Sodaro",
+        "order": 504,
+        "gender": 1,
+        "profilePath": "/mia2ZT1kMUnKUdT2Q9QZ7u80HJJ.jpg"
+      },
+      {
+        "character": "(voice)",
+        "creditId": "6690db690b8e3d41929e23db",
+        "id": 52698,
+        "name": "Nika Futterman",
+        "order": 507,
+        "gender": 1,
+        "profilePath": "/6zfuSfLGtLXtFxXBUftMQbgfH6q.jpg"
+      },
+      {
+        "character": "(voice)",
+        "creditId": "6690d7eab0cd83641b239d25",
+        "id": 3899830,
+        "name": "Matthew Inman",
+        "order": 503,
+        "gender": 2,
+        "profilePath": null
+      },
+      {
+        "character": "(voice)",
+        "creditId": "6690ddedd035ad627ce10fe2",
+        "id": 1225507,
+        "name": "Lucky Yates",
+        "order": 509,
+        "gender": 2,
+        "profilePath": "/xLy7nHYEx4RXDELr8qmpxKAQpt.jpg"
+      },
+      {
+        "character": "(voice)",
+        "creditId": "6690d821695b94d2e62cd9cd",
+        "id": 54043,
+        "name": "Gary Anthony Williams",
+        "order": 505,
+        "gender": 2,
+        "profilePath": "/96BbiV8rQOeGyoDxgrepRd6lUjm.jpg"
+      },
+      {
+        "character": "(voice)",
+        "creditId": "6690dcb485e84475ac8119bd",
+        "id": 34985,
+        "name": "Cree Summer",
+        "order": 508,
+        "gender": 1,
+        "profilePath": "/3WqlRxNF4sG6hjh6zJ1NbvtC2s5.jpg"
+      }
+    ],
+    "crew": [
+      {
+        "creditId": "63d9345822df2e008cca31fc",
+        "department": "Production",
+        "id": 17403,
+        "job": "Executive Producer",
+        "name": "Mike Judge",
+        "gender": 2,
+        "profilePath": "/ol4kd4mSOK7Hx3r86ydez84bwEI.jpg"
+      },
+      {
+        "creditId": "63d93466a9117f00b2ec6a07",
+        "department": "Production",
+        "id": 1216630,
+        "job": "Executive Producer",
+        "name": "Greg Daniels",
+        "gender": 2,
+        "profilePath": "/2Hi7Tw0fyYFOZex8BuGsHS8Q4KD.jpg"
+      },
+      {
+        "creditId": "63d9347c3dc31300af234235",
+        "department": "Production",
+        "id": 1512868,
+        "job": "Executive Producer",
+        "name": "Shane Kosakowski",
+        "gender": 2,
+        "profilePath": null
+      },
+      {
+        "creditId": "63d934a8955c65007bab7cf2",
+        "department": "Production",
+        "id": 3388742,
+        "job": "Executive Producer",
+        "name": "Dustin Davis",
+        "gender": 2,
+        "profilePath": null
+      },
+      {
+        "creditId": "63d9350422df2e00b20ab988",
+        "department": "Production",
+        "id": 266920,
+        "job": "Executive Producer",
+        "name": "Peter Chernin",
+        "gender": 2,
+        "profilePath": "/6c7tilaP8n2bYJB0H6BZyEkd64k.jpg"
+      },
+      {
+        "creditId": "63d93516a9117f007f214c41",
+        "department": "Production",
+        "id": 36427,
+        "job": "Executive Producer",
+        "name": "Jenno Topping",
+        "gender": 1,
+        "profilePath": "/tOti87QZZwyBp1iujzPTib9AwuU.jpg"
+      },
+      {
+        "creditId": "63d935b63dc31300c7fafeb0",
+        "department": "Production",
+        "id": 3899828,
+        "job": "Executive Producer",
+        "name": "Elan Lee",
+        "gender": 2,
+        "profilePath": null
+      },
+      {
+        "creditId": "63d9361c22df2e00df3f0e70",
+        "department": "Production",
+        "id": 3899830,
+        "job": "Executive Producer",
+        "name": "Matthew Inman",
+        "gender": 2,
+        "profilePath": null
+      },
+      {
+        "creditId": "6476009ac2823a0106dfd9f7",
+        "department": "Sound",
+        "id": 2047865,
+        "job": "Original Music Composer",
+        "name": "Shirley Song",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "647600a9924ce600f9766a36",
+        "department": "Sound",
+        "id": 2704462,
+        "job": "Original Music Composer",
+        "name": "Jina Hyojin An",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "652fe4c1caef2d00c527f906",
+        "department": "Visual Effects",
+        "id": 4326862,
+        "job": "Animation Supervisor",
+        "name": "Jessie Moore",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e3fed2332e27a106b578",
+        "department": "Production",
+        "id": 1218546,
+        "job": "Co-Executive Producer",
+        "name": "Brian Sheesley",
+        "gender": 2,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e4121a3bf06caa239cc6",
+        "department": "Production",
+        "id": 60578,
+        "job": "Co-Executive Producer",
+        "name": "Zach Schiff-Abrams",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e432d28a758059ee4656",
+        "department": "Production",
+        "id": 4825249,
+        "job": "Co-Executive Producer",
+        "name": "Carly McGinnis",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e43e695b94d2e62cda33",
+        "department": "Production",
+        "id": 1218550,
+        "job": "Producer",
+        "name": "Janet Dimon",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e4654d3c15df39e1107a",
+        "department": "Production",
+        "id": 4825251,
+        "job": "Associate Producer",
+        "name": "Becky Jang",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e479634278a08d8b3547",
+        "department": "Production",
+        "id": 58872,
+        "job": "Casting",
+        "name": "Julie Ashton",
+        "gender": 1,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e4aa62b1651cfc809475",
+        "department": "Writing",
+        "id": 3232721,
+        "job": "Executive Story Editor",
+        "name": "Sierra Katow",
+        "gender": 1,
+        "profilePath": "/s6wPlFzNH59l9rPlmfythPHV0rz.jpg"
+      },
+      {
+        "creditId": "6690e4b482dd04ebac2cd908",
+        "department": "Writing",
+        "id": 3396721,
+        "job": "Executive Story Editor",
+        "name": "Shawn Kenji Pearlman",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e4bcf8a53e3b16520fb0",
+        "department": "Production",
+        "id": 4109524,
+        "job": "Co-Producer",
+        "name": "Noah Prestwich",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e4c76950b84c81e11094",
+        "department": "Production",
+        "id": 2468363,
+        "job": "Supervising Producer",
+        "name": "Caitie Delaney",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e4d03236a59f0c239f58",
+        "department": "Production",
+        "id": 2046284,
+        "job": "Consulting Producer",
+        "name": "Noah Garfinkel",
+        "gender": 0,
+        "profilePath": "/vcHCxXSUiVRVi5AyoQrIazFHMmn.jpg"
+      },
+      {
+        "creditId": "6690e4f1e985c04865ee46a2",
+        "department": "Production",
+        "id": 3440075,
+        "job": "Production Manager",
+        "name": "Stephanie Pecina",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e51162b1651cfc809486",
+        "department": "Production",
+        "id": 4825255,
+        "job": "Production Supervisor",
+        "name": "Alex Maynard",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e51ac15acce37c811924",
+        "department": "Directing",
+        "id": 4431134,
+        "job": "Script Coordinator",
+        "name": "Jesse Herb",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e5423236a59f0c239f5e",
+        "department": "Sound",
+        "id": 1984224,
+        "job": "Dialogue Editor",
+        "name": "Tony Orozco",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e557eb96fd5b09239b77",
+        "department": "Crew",
+        "id": 3440071,
+        "job": "Post Production Supervisor",
+        "name": "Alison Flynn",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e56806e1b3f2aa8b363e",
+        "department": "Sound",
+        "id": 2047865,
+        "job": "Main Title Theme Composer",
+        "name": "Shirley Song",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e573c5f850f19180958a",
+        "department": "Sound",
+        "id": 2704462,
+        "job": "Main Title Theme Composer",
+        "name": "Jina Hyojin An",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e582c919e1cb8dee4686",
+        "department": "Sound",
+        "id": 2171840,
+        "job": "Music Supervisor",
+        "name": "Ben Sokoler",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e58b6391adcf9ccc95ce",
+        "department": "Sound",
+        "id": 1357069,
+        "job": "Music Editor",
+        "name": "Erich Stratmann",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e5c9c60a830a29d17920",
+        "department": "Production",
+        "id": 4184429,
+        "job": "Production Accountant",
+        "name": "Spencer Rutberg",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e5fb0f7aaadbff2cdbda",
+        "department": "Visual Effects",
+        "id": 4076548,
+        "job": "Layout Supervisor",
+        "name": "Rieta Chalupiak",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e609d28a758059ee4669",
+        "department": "Visual Effects",
+        "id": 4076550,
+        "job": "Layout Supervisor",
+        "name": "Rio Alexander Koeswan",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e61d184fafe60d8093cf",
+        "department": "Art",
+        "id": 4326859,
+        "job": "Art Direction",
+        "name": "Megan Harries",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e681d8fbf8844fd17623",
+        "department": "Visual Effects",
+        "id": 4825267,
+        "job": "Compositing Supervisor",
+        "name": "Jordan Boswell",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e68c60ff82ddd6809233",
+        "department": "Sound",
+        "id": 3686985,
+        "job": "Supervising Sound Editor",
+        "name": "Brad Meyer",
+        "gender": 2,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e69428cfb1b04d06b1ab",
+        "department": "Sound",
+        "id": 2772583,
+        "job": "Sound Re-Recording Mixer",
+        "name": "Jeff Shiffman",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e69e118e39786cd99e56",
+        "department": "Sound",
+        "id": 3364345,
+        "job": "Sound Re-Recording Mixer",
+        "name": "Jacob Cook",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e6c7d2332e27a106b58e",
+        "department": "Sound",
+        "id": 3687012,
+        "job": "Foley Editor",
+        "name": "Carol Ma",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e6d53f8d4c82d95210d3",
+        "department": "Sound",
+        "id": 3784646,
+        "job": "Assistant Sound Editor",
+        "name": "Jayson Niner",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e6ef06e1b3f2aa8b3649",
+        "department": "Editing",
+        "id": 4825269,
+        "job": "Online Editor",
+        "name": "Gordon Greer",
+        "gender": 0,
+        "profilePath": null
+      },
+      {
+        "creditId": "6690e6f794c377f9c8cc9314",
+        "department": "Editing",
+        "id": 1211509,
+        "job": "Colorist",
+        "name": "Benjamin Kantor",
+        "gender": 0,
+        "profilePath": null
+      }
+    ]
+  },
+  "externalIds": {
+    "facebookId": null,
+    "freebaseId": null,
+    "freebaseMid": null,
+    "imdbId": "tt19734104",
+    "instagramId": null,
+    "tvdbId": 419191,
+    "tvrageId": null,
+    "twitterId": null
+  },
+  "keywords": [
+    {
+      "id": 977,
+      "name": "cat"
+    },
+    {
+      "id": 9649,
+      "name": "god"
+    },
+    {
+      "id": 14999,
+      "name": "devil"
+    },
+    {
+      "id": 161919,
+      "name": "adult animation"
+    },
+    {
+      "id": 252342,
+      "name": "based on card game"
+    }
+  ],
+  "mediaInfo": {
+    "downloadStatus": [],
+    "downloadStatus4k": [],
+    "id": 151,
+    "mediaType": "tv",
+    "tmdbId": 219532,
+    "tvdbId": 419191,
+    "imdbId": null,
+    "status": 3,
+    "status4k": 1,
+    "createdAt": "2024-08-22T20:36:30.000Z",
+    "updatedAt": "2024-08-22T20:36:30.000Z",
+    "lastSeasonChange": "2024-08-22T20:36:30.000Z",
+    "mediaAddedAt": null,
+    "serviceId": null,
+    "serviceId4k": null,
+    "externalServiceId": null,
+    "externalServiceId4k": null,
+    "externalServiceSlug": null,
+    "externalServiceSlug4k": null,
+    "ratingKey": null,
+    "ratingKey4k": null,
+    "requests": [
+      {
+        "id": 2,
+        "status": 2,
+        "createdAt": "2024-08-22T20:36:30.000Z",
+        "updatedAt": "2024-08-22T20:36:30.000Z",
+        "type": "tv",
+        "is4k": false,
+        "serverId": 0,
+        "profileId": 7,
+        "rootFolder": "/mnt/series",
+        "languageProfileId": 1,
+        "tags": [],
+        "isAutoRequest": false,
+        "media": {
+          "downloadStatus": [],
+          "downloadStatus4k": [],
+          "id": 151,
+          "mediaType": "tv",
+          "tmdbId": 219532,
+          "tvdbId": 419191,
+          "imdbId": null,
+          "status": 3,
+          "status4k": 1,
+          "createdAt": "2024-08-22T20:36:30.000Z",
+          "updatedAt": "2024-08-22T20:36:30.000Z",
+          "lastSeasonChange": "2024-08-22T20:36:30.000Z",
+          "mediaAddedAt": null,
+          "serviceId": null,
+          "serviceId4k": null,
+          "externalServiceId": null,
+          "externalServiceId4k": null,
+          "externalServiceSlug": null,
+          "externalServiceSlug4k": null,
+          "ratingKey": null,
+          "ratingKey4k": null
+        },
+        "requestedBy": {
+          "permissions": 2,
+          "id": 1,
+          "email": "matthijsrademaker33@gmail.com",
+          "plexUsername": "matthijsrademaker",
+          "username": null,
+          "recoveryLinkExpirationDate": null,
+          "userType": 1,
+          "plexId": 359552786,
+          "avatar": "https://plex.tv/users/c074787a5423abb3/avatar?c=1724345286",
+          "movieQuotaLimit": null,
+          "movieQuotaDays": null,
+          "tvQuotaLimit": null,
+          "tvQuotaDays": null,
+          "createdAt": "2024-08-22T16:48:06.000Z",
+          "updatedAt": "2024-08-22T16:48:06.000Z",
+          "requestCount": 2,
+          "displayName": "matthijsrademaker"
+        },
+        "modifiedBy": {
+          "permissions": 2,
+          "id": 1,
+          "email": "matthijsrademaker33@gmail.com",
+          "plexUsername": "matthijsrademaker",
+          "username": null,
+          "recoveryLinkExpirationDate": null,
+          "userType": 1,
+          "plexId": 359552786,
+          "avatar": "https://plex.tv/users/c074787a5423abb3/avatar?c=1724345286",
+          "movieQuotaLimit": null,
+          "movieQuotaDays": null,
+          "tvQuotaLimit": null,
+          "tvQuotaDays": null,
+          "createdAt": "2024-08-22T16:48:06.000Z",
+          "updatedAt": "2024-08-22T16:48:06.000Z",
+          "requestCount": 2,
+          "displayName": "matthijsrademaker"
+        },
+        "seasons": [
+          {
+            "id": 1,
+            "seasonNumber": 1,
+            "status": 2,
+            "createdAt": "2024-08-22T20:36:30.000Z",
+            "updatedAt": "2024-08-22T20:36:30.000Z"
+          }
+        ],
+        "seasonCount": 1
+      }
+    ],
+    "issues": [],
+    "seasons": []
+  },
+  "watchProviders": [
+    {
+      "iso_3166_1": "AD",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=AD",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "AE",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=AE",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "AG",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=AG",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "AL",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=AL",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "AO",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=AO",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 4,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "AR",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=AR",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "AT",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=AT",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "AU",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=AU",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        },
+        {
+          "displayPriority": 54,
+          "logoPath": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "id": 1796,
+          "name": "Netflix basic with Ads"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "AZ",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=AZ",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 2,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "BA",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=BA",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "BB",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=BB",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "BE",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=BE",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "BG",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=BG",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "BH",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=BH",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "BM",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=BM",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "BO",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=BO",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "BR",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=BR",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 2,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        },
+        {
+          "displayPriority": 52,
+          "logoPath": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "id": 1796,
+          "name": "Netflix basic with Ads"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "BS",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=BS",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "BY",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=BY",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 6,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "BZ",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=BZ",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 7,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "CA",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=CA",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        },
+        {
+          "displayPriority": 112,
+          "logoPath": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "id": 1796,
+          "name": "Netflix basic with Ads"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "CH",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=CH",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "CI",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=CI",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "CL",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=CL",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "CM",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=CM",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 4,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "CO",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=CO",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 2,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "CR",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=CR",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "CU",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=CU",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "CV",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=CV",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "CZ",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=CZ",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "DE",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=DE",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        },
+        {
+          "displayPriority": 104,
+          "logoPath": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "id": 1796,
+          "name": "Netflix basic with Ads"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "DK",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=DK",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "DO",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=DO",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "DZ",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=DZ",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "EC",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=EC",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "EE",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=EE",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "EG",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=EG",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "ES",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=ES",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 5,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        },
+        {
+          "displayPriority": 64,
+          "logoPath": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "id": 1796,
+          "name": "Netflix basic with Ads"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "FI",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=FI",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "FJ",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=FJ",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "FR",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=FR",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        },
+        {
+          "displayPriority": 75,
+          "logoPath": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "id": 1796,
+          "name": "Netflix basic with Ads"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "GB",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=GB",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        },
+        {
+          "displayPriority": 103,
+          "logoPath": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "id": 1796,
+          "name": "Netflix basic with Ads"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "GF",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=GF",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "GG",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=GG",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "GH",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=GH",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "GI",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=GI",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "GQ",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=GQ",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "GR",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=GR",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "GT",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=GT",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "HK",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=HK",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "HN",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=HN",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "HR",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=HR",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "HU",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=HU",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "ID",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=ID",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "IE",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=IE",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "IL",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=IL",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "IN",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=IN",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "IQ",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=IQ",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "IS",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=IS",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "IT",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=IT",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        },
+        {
+          "displayPriority": 65,
+          "logoPath": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "id": 1796,
+          "name": "Netflix basic with Ads"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "JM",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=JM",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "JO",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=JO",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "JP",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=JP",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        },
+        {
+          "displayPriority": 28,
+          "logoPath": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "id": 1796,
+          "name": "Netflix basic with Ads"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "KE",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=KE",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "KR",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=KR",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        },
+        {
+          "displayPriority": 30,
+          "logoPath": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "id": 1796,
+          "name": "Netflix basic with Ads"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "KW",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=KW",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "LB",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=LB",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "LC",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=LC",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "LI",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=LI",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "LT",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=LT",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "LU",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=LU",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 8,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "LV",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=LV",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "LY",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=LY",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "MA",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=MA",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "MC",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=MC",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "MD",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=MD",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "ME",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=ME",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 4,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "MG",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=MG",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 4,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "MK",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=MK",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "ML",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=ML",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 5,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "MT",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=MT",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "MU",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=MU",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "MX",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=MX",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 8,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        },
+        {
+          "displayPriority": 49,
+          "logoPath": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "id": 1796,
+          "name": "Netflix basic with Ads"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "MY",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=MY",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "MZ",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=MZ",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "NG",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=NG",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "NI",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=NI",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 11,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "NL",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=NL",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 2,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "NO",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=NO",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "NZ",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=NZ",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "OM",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=OM",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "PA",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=PA",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "PE",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=PE",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 2,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "PF",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=PF",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "PH",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=PH",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "PK",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=PK",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "PL",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=PL",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "PS",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=PS",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "PT",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=PT",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "PY",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=PY",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "QA",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=QA",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "RO",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=RO",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "RS",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=RS",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "SA",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=SA",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "SC",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=SC",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "SE",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=SE",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "SG",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=SG",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "SI",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=SI",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "SK",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=SK",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "SM",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=SM",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "SN",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=SN",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "SV",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=SV",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "TC",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=TC",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "TD",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=TD",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 5,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "TH",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=TH",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "TN",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=TN",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "TR",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=TR",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 1,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "TT",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=TT",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "TW",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=TW",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "TZ",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=TZ",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "UA",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=UA",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "UG",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=UG",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "US",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=US",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        },
+        {
+          "displayPriority": 194,
+          "logoPath": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "id": 1796,
+          "name": "Netflix basic with Ads"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "UY",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=UY",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "VE",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=VE",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "YE",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=YE",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "ZA",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=ZA",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "ZM",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=ZM",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 0,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    },
+    {
+      "iso_3166_1": "ZW",
+      "link": "https://www.themoviedb.org/tv/219532-exploding-kittens/watch?locale=ZW",
+      "buy": [],
+      "flatrate": [
+        {
+          "displayPriority": 5,
+          "logoPath": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "id": 8,
+          "name": "Netflix"
+        }
+      ]
+    }
+  ]
+}
