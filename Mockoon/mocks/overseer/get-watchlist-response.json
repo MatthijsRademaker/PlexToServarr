@@ -1,0 +1,31 @@
+{
+  "page": 1,
+  "totalPages": 1,
+  "totalResults": 4,
+  "results": [
+    {
+      "tmdbId": 1,
+      "ratingKey": "string",
+      "mediaType": "movie",
+      "title": "string"
+    },
+    {
+      "tmdbId": 2,
+      "ratingKey": "string",
+      "mediaType": "movie",
+      "title": "string"
+    },
+    {
+      "tmdbId": 3,
+      "ratingKey": "string",
+      "mediaType": "tv",
+      "title": "string"
+    },
+    {
+      "tmdbId": 4,
+      "ratingKey": "string",
+      "mediaType": "tv",
+      "title": "string"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+overseer:
+  - api_key: 'your:'
+  - base_url: 'your'
+
+radarr:
+  - api_key: 'your:'
+  - base_url: 'your'
+
+sonarr:
+  - api_key: 'your:'
+  - base_url: 'your'

@@ -1,4 +1,4 @@
-module swagger
+module swaggerClientOverseerr
 
 go 1.22.3
 

@@ -3,27 +3,29 @@ package main
 import (
 	"context"
 	"log"
-	"swagger"
+	"swaggerClientOverseerr"
 
 	"github.com/antihax/optional"
 )
 
 type OverseerService struct {
-	Context   context.Context
-	ApiClient *swagger.APIClient
-	Me        swagger.User
+	Context         context.Context
+	ApiClient       *swaggerClientOverseerr.APIClient
+	Me              swaggerClientOverseerr.User
+	WatchListMovies []int32
+	WatchListSeries []int32
 }
 
 func NewOverseerService(apiKey string, baseUrl string) *OverseerService {
 	waitUntilServiceAvailable(baseUrl + "/status")
 
-	cfg := &swagger.Configuration{
+	cfg := &swaggerClientOverseerr.Configuration{
 		BasePath:  baseUrl,
 		UserAgent: "Overseer-Client/1.0.0/go",
 	}
-	context := context.WithValue(context.Background(), swagger.ContextAPIKey, swagger.APIKey{Key: apiKey})
+	context := context.WithValue(context.Background(), swaggerClientOverseerr.ContextAPIKey, swaggerClientOverseerr.APIKey{Key: apiKey})
 
-	client := swagger.NewAPIClient(cfg)
+	client := swaggerClientOverseerr.NewAPIClient(cfg)
 
 	me, _, err := client.AuthApi.AuthMeGet(context)
 
@@ -32,9 +34,11 @@ func NewOverseerService(apiKey string, baseUrl string) *OverseerService {
 	}
 
 	return &OverseerService{
-		Context:   context,
-		ApiClient: client,
-		Me:        me,
+		Context:         context,
+		ApiClient:       client,
+		Me:              me,
+		WatchListMovies: make([]int32, 0),
+		WatchListSeries: make([]int32, 0),
 	}
 }
 
@@ -43,7 +47,7 @@ func (overseer *OverseerService) RequestEntireWatchlist() {
 	// Create a map to store already requested media IDs
 	requestedMediaIDs := make(map[float64]bool)
 
-	requests, response, err := overseer.ApiClient.RequestApi.RequestGet(overseer.Context, &swagger.RequestApiRequestGetOpts{
+	requests, response, err := overseer.ApiClient.RequestApi.RequestGet(overseer.Context, &swaggerClientOverseerr.RequestApiRequestGetOpts{
 		Take: optional.NewFloat64(1000),
 	})
 
@@ -61,7 +65,7 @@ func (overseer *OverseerService) RequestEntireWatchlist() {
 	// Fetch watchlist
 	watchlistPage := float64(1)
 	for {
-		watchlist, response, err := overseer.ApiClient.SearchApi.DiscoverWatchlistGet(overseer.Context, &swagger.SearchApiDiscoverWatchlistGetOpts{
+		watchlist, response, err := overseer.ApiClient.SearchApi.DiscoverWatchlistGet(overseer.Context, &swaggerClientOverseerr.SearchApiDiscoverWatchlistGetOpts{
 			Page: optional.NewFloat64(watchlistPage),
 		})
 
@@ -70,6 +74,8 @@ func (overseer *OverseerService) RequestEntireWatchlist() {
 			log.Printf("Overseerr response: %v", response)
 			return
 		}
+
+		overseer.clearWatchLists()
 
 		// Process each media in the watchlist
 		for _, media := range watchlist.Results {
@@ -89,7 +95,12 @@ func (overseer *OverseerService) RequestEntireWatchlist() {
 	}
 }
 
-func (overseer *OverseerService) RequestMedia(media swagger.InlineResponse20013Results) {
+func (overseer *OverseerService) clearWatchLists() {
+	overseer.WatchListMovies = make([]int32, 0)
+	overseer.WatchListSeries = make([]int32, 0)
+}
+
+func (overseer *OverseerService) RequestMedia(media swaggerClientOverseerr.InlineResponse20013Results) {
 
 	switch media.MediaType {
 	case "tv":
@@ -101,9 +112,9 @@ func (overseer *OverseerService) RequestMedia(media swagger.InlineResponse20013R
 	}
 }
 
-func (overseer *OverseerService) RequestSeries(media swagger.InlineResponse20013Results) {
+func (overseer *OverseerService) RequestSeries(media swaggerClientOverseerr.InlineResponse20013Results) {
 	log.Printf("Requesting series: %v", media.Title)
-	seriesInfo, _, err := overseer.ApiClient.TvApi.TvTvIdGet(overseer.Context, float64(media.TmdbId), &swagger.TvApiTvTvIdGetOpts{})
+	seriesInfo, _, err := overseer.ApiClient.TvApi.TvTvIdGet(overseer.Context, float64(media.TmdbId), &swaggerClientOverseerr.TvApiTvTvIdGetOpts{})
 
 	if err != nil {
 		log.Printf("Overseerr err: %v", err)
@@ -116,10 +127,10 @@ func (overseer *OverseerService) RequestSeries(media swagger.InlineResponse20013
 		seasonNumbers = append(seasonNumbers, season.SeasonNumber)
 	}
 
-	_, res, err := overseer.ApiClient.RequestApi.RequestPost(overseer.Context, swagger.RequestBody{
+	_, res, err := overseer.ApiClient.RequestApi.RequestPost(overseer.Context, swaggerClientOverseerr.RequestBody{
 		MediaType:         "tv",
-		MediaId:           float64(media.TmdbId),
-		TvdbId:            float64(seriesInfo.ExternalIds.TvdbId),
+		MediaId:           media.TmdbId,
+		TvdbId:            seriesInfo.ExternalIds.TvdbId,
 		Is4k:              false,
 		ServerId:          float64(0),
 		Seasons:           seasonNumbers,
@@ -133,13 +144,14 @@ func (overseer *OverseerService) RequestSeries(media swagger.InlineResponse20013
 		log.Printf("Overseerr err: %v", err)
 		log.Printf("Overseerr response: %v", res)
 	}
-
+	// Add distinct values to WatchListSeries
+	overseer.WatchListSeries = AddToWatchList(overseer.WatchListSeries, int32(seriesInfo.ExternalIds.TvdbId))
 }
 
-func (overseer *OverseerService) RequestMovie(media swagger.InlineResponse20013Results) {
+func (overseer *OverseerService) RequestMovie(media swaggerClientOverseerr.InlineResponse20013Results) {
 	log.Printf("Requesting movie: %v", media.Title)
 
-	_, res, err := overseer.ApiClient.RequestApi.RequestPost(overseer.Context, swagger.RequestBody{
+	_, res, err := overseer.ApiClient.RequestApi.RequestPost(overseer.Context, swaggerClientOverseerr.RequestBody{
 		MediaType: "movie",
 		MediaId:   float64(media.TmdbId),
 		Is4k:      false,
@@ -151,4 +163,6 @@ func (overseer *OverseerService) RequestMovie(media swagger.InlineResponse20013R
 		log.Printf("Overseerr err: %v", err)
 		log.Printf("Overseerr response: %v", res)
 	}
+
+	overseer.WatchListMovies = AddToWatchList(overseer.WatchListMovies, int32(media.TmdbId))
 }

@@ -4,6 +4,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"slices"
 	"time"
 )
 
@@ -39,4 +40,12 @@ func isServiceAvailable(url string) bool {
 
 	log.Println("Service available. Status Code:", resp.StatusCode)
 	return true
+}
+
+// Helper function to check if a value exists in a slice
+func AddToWatchList(slice []int32, value int32) []int32 {
+	if !slices.Contains(slice, value) {
+		return append(slice, value)
+	}
+	return slice
 }

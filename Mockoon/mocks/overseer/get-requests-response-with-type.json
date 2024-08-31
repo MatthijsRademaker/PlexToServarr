@@ -1,0 +1,197 @@
+{
+    "pageInfo": {
+      "page": 1,
+      "pages": 10,
+      "results": 100
+    },
+    "results": [
+      {
+        "id": {{faker 'number.int'}},
+        "status": {{faker 'number.int' min=0 max=1}},
+        "media": {
+          "id": {{faker 'number.int'}},
+          "tmdbId": {{faker 'number.int'}},
+          "tvdbId": 0,
+          "status": {{faker 'number.int' min=0 max=1}},
+          "requests": [
+            {{faker 'lorem.word'}}
+          ],
+          "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}}
+        },
+        "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+        "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+        "requestedBy": {
+          "id": {{faker 'number.int'}},
+          "email": {{faker 'internet.email'}},
+          "username": {{faker 'internet.userName'}},
+          "plexToken": {{faker 'string.uuid'}},
+          "plexUsername": {{faker 'internet.userName'}},
+          "userType": {{faker 'number.int' min=1 max=2}},
+          "permissions": {{faker 'number.int' min=0 max=1}},
+          "avatar": {{faker 'internet.avatar'}},
+          "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "requestCount": {{faker 'number.int' min=1 max=1}}
+        },
+        "modifiedBy": {
+          "id": {{faker 'number.int'}},
+          "email": {{faker 'internet.email'}},
+          "username": {{faker 'internet.userName'}},
+          "plexToken": {{faker 'string.uuid'}},
+          "plexUsername": {{faker 'internet.userName'}},
+          "userType": {{faker 'number.int' min=1 max=2}},
+          "permissions": {{faker 'number.int' min=0 max=1}},
+          "avatar": {{faker 'internet.avatar'}},
+          "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "requestCount": {{faker 'number.int' min=1 max=1}}
+        },
+        "is4k": {{faker 'datatype.boolean'}},
+        "serverId": {{faker 'number.int'}},
+        "profileId": {{faker 'number.int'}},
+        "rootFolder": {{faker 'system.filePath'}}
+      },
+      {
+        "id": {{faker 'number.int'}},
+        "status": {{faker 'number.int' min=0 max=1}},
+        "media": {
+          "id": {{faker 'number.int'}},
+          "tmdbId": {{faker 'number.int'}},
+          "tvdbId": 0,
+          "status": {{faker 'number.int' min=0 max=1}},
+          "requests": [
+            {{faker 'lorem.word'}}
+          ],
+          "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}}
+        },
+        "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+        "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+        "requestedBy": {
+          "id": {{faker 'number.int'}},
+          "email": {{faker 'internet.email'}},
+          "username": {{faker 'internet.userName'}},
+          "plexToken": {{faker 'string.uuid'}},
+          "plexUsername": {{faker 'internet.userName'}},
+          "userType": {{faker 'number.int' min=1 max=2}},
+          "permissions": {{faker 'number.int' min=0 max=1}},
+          "avatar": {{faker 'internet.avatar'}},
+          "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "requestCount": {{faker 'number.int' min=1 max=1}}
+        },
+        "modifiedBy": {
+          "id": {{faker 'number.int'}},
+          "email": {{faker 'internet.email'}},
+          "username": {{faker 'internet.userName'}},
+          "plexToken": {{faker 'string.uuid'}},
+          "plexUsername": {{faker 'internet.userName'}},
+          "userType": {{faker 'number.int' min=1 max=2}},
+          "permissions": {{faker 'number.int' min=0 max=1}},
+          "avatar": {{faker 'internet.avatar'}},
+          "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "requestCount": {{faker 'number.int' min=1 max=1}}
+        },
+        "is4k": {{faker 'datatype.boolean'}},
+        "serverId": {{faker 'number.int'}},
+        "profileId": {{faker 'number.int'}},
+        "rootFolder": {{faker 'system.filePath'}}
+      },
+      {
+        "id": {{faker 'number.int'}},
+        "status": {{faker 'number.int' min=0 max=1}},
+        "media": {
+          "id": {{faker 'number.int'}},
+          "tmdbId": 0,
+          "tvdbId": {{faker 'number.int'}},
+          "status": {{faker 'number.int' min=0 max=1}},
+          "requests": [
+            {{faker 'lorem.word'}}
+          ],
+          "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}}
+        },
+        "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+        "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+        "requestedBy": {
+          "id": {{faker 'number.int'}},
+          "email": {{faker 'internet.email'}},
+          "username": {{faker 'internet.userName'}},
+          "plexToken": {{faker 'string.uuid'}},
+          "plexUsername": {{faker 'internet.userName'}},
+          "userType": {{faker 'number.int' min=1 max=2}},
+          "permissions": {{faker 'number.int' min=0 max=1}},
+          "avatar": {{faker 'internet.avatar'}},
+          "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "requestCount": {{faker 'number.int' min=1 max=1}}
+        },
+        "modifiedBy": {
+          "id": {{faker 'number.int'}},
+          "email": {{faker 'internet.email'}},
+          "username": {{faker 'internet.userName'}},
+          "plexToken": {{faker 'string.uuid'}},
+          "plexUsername": {{faker 'internet.userName'}},
+          "userType": {{faker 'number.int' min=1 max=2}},
+          "permissions": {{faker 'number.int' min=0 max=1}},
+          "avatar": {{faker 'internet.avatar'}},
+          "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "requestCount": {{faker 'number.int' min=1 max=1}}
+        },
+        "is4k": {{faker 'datatype.boolean'}},
+        "serverId": {{faker 'number.int'}},
+        "profileId": {{faker 'number.int'}},
+        "rootFolder": {{faker 'system.filePath'}}
+      },
+      {
+        "id": {{faker 'number.int'}},
+        "status": {{faker 'number.int' min=0 max=1}},
+        "media": {
+          "id": {{faker 'number.int'}},
+          "tmdbId": 0,
+          "tvdbId": {{faker 'number.int'}},
+          "status": {{faker 'number.int' min=0 max=1}},
+          "requests": [
+            {{faker 'lorem.word'}}
+          ],
+          "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}}
+        },
+        "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+        "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+        "requestedBy": {
+          "id": {{faker 'number.int'}},
+          "email": {{faker 'internet.email'}},
+          "username": {{faker 'internet.userName'}},
+          "plexToken": {{faker 'string.uuid'}},
+          "plexUsername": {{faker 'internet.userName'}},
+          "userType": {{faker 'number.int' min=1 max=2}},
+          "permissions": {{faker 'number.int' min=0 max=1}},
+          "avatar": {{faker 'internet.avatar'}},
+          "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "requestCount": {{faker 'number.int' min=1 max=1}}
+        },
+        "modifiedBy": {
+          "id": {{faker 'number.int'}},
+          "email": {{faker 'internet.email'}},
+          "username": {{faker 'internet.userName'}},
+          "plexToken": {{faker 'string.uuid'}},
+          "plexUsername": {{faker 'internet.userName'}},
+          "userType": {{faker 'number.int' min=1 max=2}},
+          "permissions": {{faker 'number.int' min=0 max=1}},
+          "avatar": {{faker 'internet.avatar'}},
+          "createdAt": {{faker 'date.past' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "updatedAt": {{faker 'date.recent' 'YYYY-MM-DDTHH:mm:ss.SSSZ'}},
+          "requestCount": {{faker 'number.int' min=1 max=1}}
+        },
+        "is4k": {{faker 'datatype.boolean'}},
+        "serverId": {{faker 'number.int'}},
+        "profileId": {{faker 'number.int'}},
+        "rootFolder": {{faker 'system.filePath'}}
+      }
+    ]
+  }

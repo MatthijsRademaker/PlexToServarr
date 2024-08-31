@@ -1,0 +1,239 @@
+{
+  "id": 123,
+  "backdropPath": "string",
+  "posterPath": "string",
+  "contentRatings": {
+    "results": [
+      {
+        "iso_3166_1": "US",
+        "rating": "TV-14"
+      }
+    ]
+  },
+  "createdBy": [
+    {
+      "id": 0,
+      "name": "string",
+      "gender": 0,
+      "profilePath": "string"
+    }
+  ],
+  "episodeRunTime": [0],
+  "firstAirDate": "string",
+  "genres": [
+    {
+      "id": 1,
+      "name": "Adventure"
+    }
+  ],
+  "homepage": "string",
+  "inProduction": true,
+  "languages": ["string"],
+  "lastAirDate": "string",
+  "lastEpisodeToAir": {
+    "id": 0,
+    "name": "string",
+    "airDate": "string",
+    "episodeNumber": 0,
+    "overview": "string",
+    "productionCode": "string",
+    "seasonNumber": 0,
+    "showId": 0,
+    "stillPath": "string",
+    "voteAverage": 0,
+    "voteCount": 0
+  },
+  "name": "string",
+  "nextEpisodeToAir": {
+    "id": 0,
+    "name": "string",
+    "airDate": "string",
+    "episodeNumber": 0,
+    "overview": "string",
+    "productionCode": "string",
+    "seasonNumber": 0,
+    "showId": 0,
+    "stillPath": "string",
+    "voteAverage": 0,
+    "voteCount": 0
+  },
+  "networks": [
+    {
+      "id": 1,
+      "logoPath": "string",
+      "originCountry": "string",
+      "name": "string"
+    }
+  ],
+  "numberOfEpisodes": 0,
+  "numberOfSeason": 0,
+  "originCountry": ["string"],
+  "originalLanguage": "string",
+  "originalName": "string",
+  "overview": "string",
+  "popularity": 0,
+  "productionCompanies": [
+    {
+      "id": 1,
+      "logoPath": "string",
+      "originCountry": "string",
+      "name": "string"
+    }
+  ],
+  "productionCountries": [
+    {
+      "iso_3166_1": "string",
+      "name": "string"
+    }
+  ],
+  "spokenLanguages": [
+    {
+      "englishName": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "seasons": [
+    {
+      "id": 0,
+      "airDate": "string",
+      "episodeCount": 0,
+      "name": "string",
+      "overview": "string",
+      "posterPath": "string",
+      "seasonNumber": 1,
+      "episodes": [
+        {
+          "id": 0,
+          "name": "string",
+          "airDate": "string",
+          "episodeNumber": 0,
+          "overview": "string",
+          "productionCode": "string",
+          "seasonNumber": 0,
+          "showId": 0,
+          "stillPath": "string",
+          "voteAverage": 0,
+          "voteCount": 0
+        }
+      ]
+    }
+  ],
+  "status": "string",
+  "tagline": "string",
+  "type": "string",
+  "voteAverage": 0,
+  "voteCount": 0,
+  "credits": {
+    "cast": [
+      {
+        "id": 123,
+        "castId": 1,
+        "character": "Some Character Name",
+        "creditId": "string",
+        "gender": 0,
+        "name": "Some Persons Name",
+        "order": 0,
+        "profilePath": "string"
+      }
+    ],
+    "crew": [
+      {
+        "id": 123,
+        "creditId": "string",
+        "gender": 0,
+        "name": "Some Persons Name",
+        "job": "string",
+        "department": "string",
+        "profilePath": "string"
+      }
+    ]
+  },
+  "externalIds": {
+    "facebookId": "string",
+    "freebaseId": "string",
+    "freebaseMid": "string",
+    "imdbId": "string",
+    "instagramId": "string",
+    "tvdbId": 1,
+    "tvrageId": 0,
+    "twitterId": "string"
+  },
+  "keywords": [
+    {
+      "id": 1,
+      "name": "anime"
+    }
+  ],
+  "mediaInfo": {
+    "id": 0,
+    "tmdbId": 1,
+    "tvdbId": 0,
+    "status": 0,
+    "requests": [
+      {
+        "id": 123,
+        "status": 0,
+        "media": "string",
+        "createdAt": "2020-09-12T10:00:27.000Z",
+        "updatedAt": "2020-09-12T10:00:27.000Z",
+        "requestedBy": {
+          "id": 1,
+          "email": "hey@itsme.com",
+          "username": "string",
+          "plexToken": "string",
+          "plexUsername": "string",
+          "userType": 1,
+          "permissions": 0,
+          "avatar": "string",
+          "createdAt": "2020-09-02T05:02:23.000Z",
+          "updatedAt": "2020-09-02T05:02:23.000Z",
+          "requestCount": 5
+        },
+        "modifiedBy": {
+          "id": 1,
+          "email": "hey@itsme.com",
+          "username": "string",
+          "plexToken": "string",
+          "plexUsername": "string",
+          "userType": 1,
+          "permissions": 0,
+          "avatar": "string",
+          "createdAt": "2020-09-02T05:02:23.000Z",
+          "updatedAt": "2020-09-02T05:02:23.000Z",
+          "requestCount": 5
+        },
+        "is4k": false,
+        "serverId": 0,
+        "profileId": 0,
+        "rootFolder": "string"
+      }
+    ],
+    "createdAt": "2020-09-12T10:00:27.000Z",
+    "updatedAt": "2020-09-12T10:00:27.000Z"
+  },
+  "watchProviders": [
+    [
+      {
+        "iso_3166_1": "string",
+        "link": "string",
+        "buy": [
+          {
+            "displayPriority": 0,
+            "logoPath": "string",
+            "id": 0,
+            "name": "string"
+          }
+        ],
+        "flatrate": [
+          {
+            "displayPriority": 0,
+            "logoPath": "string",
+            "id": 0,
+            "name": "string"
+          }
+        ]
+      }
+    ]
+  ]
+}

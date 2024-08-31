@@ -1,0 +1,11 @@
+overseer:
+  api_key: 'X'
+  base_url: 'http://localhost:3000/api/v1'
+
+radarr:
+  api_key: 'X'
+  base_url: 'http://localhost:3001'
+
+sonarr:
+  api_key: 'X'
+  base_url: 'http://localhost:3002'
