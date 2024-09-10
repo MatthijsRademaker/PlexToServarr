@@ -1,43 +1,71 @@
 package main
 
 import (
-	"io"
+	"flag"
 	"log"
-	"net/http"
-	"os"
-	"time"
-
-	"gopkg.in/yaml.v3"
 
 	"github.com/robfig/cron/v3"
 )
 
-var defaultHttpClient = &http.Client{
-	Timeout: 5 * time.Second, // Set a timeout of 5 seconds
-}
-
-type ServiceConfig struct {
-	APIKey  string `yaml:"api_key"`
-	BaseURL string `yaml:"base_url"`
-}
-
+// Config struct (define your structure here as per the config file)
 type Config struct {
-	Overseer ServiceConfig `yaml:"overseer"`
-	Radarr   ServiceConfig `yaml:"radarr"`
-	Sonarr   ServiceConfig `yaml:"sonarr"`
+	Overseer struct {
+		APIKey  string
+		BaseURL string
+	}
+	Radarr struct {
+		APIKey  string
+		BaseURL string
+	}
+	Sonarr struct {
+		APIKey  string
+		BaseURL string
+	}
 }
 
 func main() {
-	// Determine the environment
-	env := os.Getenv("ENVIRONMENT")
-	if env == "" {
-		env = "development" // Default to development if no environment is set
+	// Define flags for each configuration option
+	overseerAPIKey := flag.String("overseer-api-key", "", "API key for Overseer")
+	overseerBaseURL := flag.String("overseer-base-url", "", "Base URL for Overseer")
+	radarrAPIKey := flag.String("radarr-api-key", "", "API key for Radarr")
+	radarrBaseURL := flag.String("radarr-base-url", "", "Base URL for Radarr")
+	sonarrAPIKey := flag.String("sonarr-api-key", "", "API key for Sonarr")
+	sonarrBaseURL := flag.String("sonarr-base-url", "", "Base URL for Sonarr")
+
+	// Parse the flags
+	flag.Parse()
+
+	// Validate that all required flags are provided
+	if *overseerAPIKey == "" || *overseerBaseURL == "" ||
+		*radarrAPIKey == "" || *radarrBaseURL == "" ||
+		*sonarrAPIKey == "" || *sonarrBaseURL == "" {
+		log.Fatalf("All API keys and base URLs must be provided via flags")
 	}
 
-	// Load the configuration from the appropriate file
-	configFile := "config." + env + ".yml"
-	config := &Config{}
-	loadConfig(configFile, config)
+	// Load the configuration from the provided flags
+	config := &Config{
+		Overseer: struct {
+			APIKey  string
+			BaseURL string
+		}{
+			APIKey:  *overseerAPIKey,
+			BaseURL: *overseerBaseURL,
+		},
+		Radarr: struct {
+			APIKey  string
+			BaseURL string
+		}{
+			APIKey:  *radarrAPIKey,
+			BaseURL: *radarrBaseURL,
+		},
+		Sonarr: struct {
+			APIKey  string
+			BaseURL string
+		}{
+			APIKey:  *sonarrAPIKey,
+			BaseURL: *sonarrBaseURL,
+		},
+	}
 
 	// Initialize services with the loaded configuration
 	overseer := NewOverseerService(config.Overseer.APIKey, config.Overseer.BaseURL)
@@ -59,22 +87,4 @@ func main() {
 
 	log.Println("Service started")
 	select {}
-}
-
-func loadConfig(filePath string, config *Config) {
-	file, err := os.Open(filePath)
-	if err != nil {
-		log.Fatalf("Failed to open config file: %v", err)
-	}
-	defer file.Close()
-
-	data, err := io.ReadAll(file)
-	if err != nil {
-		log.Fatalf("Failed to read config file: %v", err)
-	}
-
-	err = yaml.Unmarshal(data, config)
-	if err != nil {
-		log.Fatalf("Failed to unmarshal config file: %v", err)
-	}
 }

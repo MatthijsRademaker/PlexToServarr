@@ -8,6 +8,10 @@ import (
 	"time"
 )
 
+var defaultHttpClient = &http.Client{
+	Timeout: 5 * time.Second, // Set a timeout of 5 seconds
+}
+
 func waitUntilServiceAvailable(url string) bool {
 	log.Println("Waiting for service to become available:", url)
 	for {

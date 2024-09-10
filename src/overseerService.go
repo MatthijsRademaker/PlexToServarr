@@ -20,7 +20,7 @@ func NewOverseerService(apiKey string, baseUrl string) *OverseerService {
 	waitUntilServiceAvailable(baseUrl + "/status")
 
 	cfg := &swaggerClientOverseerr.Configuration{
-		BasePath:  baseUrl,
+		BasePath:  baseUrl + "/api/v1",
 		UserAgent: "Overseer-Client/1.0.0/go",
 	}
 	context := context.WithValue(context.Background(), swaggerClientOverseerr.ContextAPIKey, swaggerClientOverseerr.APIKey{Key: apiKey})
@@ -135,7 +135,7 @@ func (overseer *OverseerService) RequestSeries(media swaggerClientOverseerr.Inli
 		ServerId:          float64(0),
 		Seasons:           seasonNumbers,
 		UserId:            float64(overseer.Me.Id),
-		RootFolder:        "/mnt/series",
+		RootFolder:        "/data/media/tv",
 		LanguageProfileId: float64(1),
 		ProfileId:         float64(7),
 	})
