@@ -1,8 +1,8 @@
 package main
 
 import (
-	"flag"
 	"log"
+	"os"
 
 	"github.com/robfig/cron/v3"
 )
@@ -25,45 +25,42 @@ type Config struct {
 
 func main() {
 	// Define flags for each configuration option
-	overseerAPIKey := flag.String("overseer-api-key", "", "API key for Overseer")
-	overseerBaseURL := flag.String("overseer-base-url", "", "Base URL for Overseer")
-	radarrAPIKey := flag.String("radarr-api-key", "", "API key for Radarr")
-	radarrBaseURL := flag.String("radarr-base-url", "", "Base URL for Radarr")
-	sonarrAPIKey := flag.String("sonarr-api-key", "", "API key for Sonarr")
-	sonarrBaseURL := flag.String("sonarr-base-url", "", "Base URL for Sonarr")
+	overseerAPIKey := os.Getenv("OVERSEER_API_KEY")
+	overseerBaseURL := os.Getenv("OVERSEER_BASE_URL")
+	radarrAPIKey := os.Getenv("RADARR_API_KEY")
+	radarrBaseURL := os.Getenv("RADARR_BASE_URL")
+	sonarrAPIKey := os.Getenv("SONARR_API_KEY")
+	sonarrBaseURL := os.Getenv("SONARR_BASE_URL")
 
-	// Parse the flags
-	flag.Parse()
-
-	// Validate that all required flags are provided
-	if *overseerAPIKey == "" || *overseerBaseURL == "" ||
-		*radarrAPIKey == "" || *radarrBaseURL == "" ||
-		*sonarrAPIKey == "" || *sonarrBaseURL == "" {
-		log.Fatalf("All API keys and base URLs must be provided via flags")
+	// Validate that all required environment variables are provided
+	if overseerAPIKey == "" || overseerBaseURL == "" ||
+		radarrAPIKey == "" || radarrBaseURL == "" ||
+		sonarrAPIKey == "" || sonarrBaseURL == "" {
+		log.Fatalf("All API keys and base URLs must be provided via environment variables")
 	}
 
-	// Load the configuration from the provided flags
+	// Load the configuration from the environment variables
 	config := &Config{
 		Overseer: struct {
 			APIKey  string
 			BaseURL string
 		}{
-			APIKey:  *overseerAPIKey,
-			BaseURL: *overseerBaseURL,
+			APIKey:  overseerAPIKey,
+			BaseURL: overseerBaseURL,
 		},
 		Radarr: struct {
 			APIKey  string
 			BaseURL string
 		}{
-			APIKey:  *radarrAPIKey,
-			BaseURL: *radarrBaseURL,
+			APIKey:  radarrAPIKey,
+			BaseURL: radarrBaseURL,
 		},
 		Sonarr: struct {
 			APIKey  string
 			BaseURL string
 		}{
-			APIKey:  *sonarrAPIKey,
-			BaseURL: *sonarrBaseURL,
+			APIKey:  sonarrAPIKey,
+			BaseURL: sonarrBaseURL,
 		},
 	}
 
@@ -73,15 +70,14 @@ func main() {
 	sonarr := NewSonarrService(config.Sonarr.APIKey, config.Sonarr.BaseURL)
 
 	overseer.RequestEntireWatchlist()
-	radarr.DeleteUnwatched(overseer.WatchListMovies)
-	sonarr.DeleteUnwatched(overseer.WatchListSeries)
+	radarr.DeleteUnwatched(overseer.MoviesToDelete)
+	sonarr.DeleteUnwatched(overseer.SeriesToDelete)
 
 	// Set up cron job
 	c := cron.New()
 	c.AddFunc("*/5 * * * *", func() {
 		overseer.RequestEntireWatchlist()
-		radarr.DeleteUnwatched(overseer.WatchListMovies)
-		sonarr.DeleteUnwatched(overseer.WatchListSeries)
+		overseer.ProcessDeletions(radarr, sonarr)
 	})
 	c.Start()
 

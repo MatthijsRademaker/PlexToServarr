@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"log"
 	"swaggerClientRadarr"
 )
 
@@ -23,17 +24,23 @@ func NewRadarrService(apiKey string, baseUrl string) *RadarrService {
 
 	return &RadarrService{
 		Servarr: Servarr{
-			Context:   context,
-			Watchlist: make([]int32, 0),
-			Type:      "Radarr",
+			Context: context,
+			Type:    "Radarr",
 		},
 		ApiClient: client,
 	}
 }
 
-func (radarr *RadarrService) DeleteUnwatched(newPlexWatchList []int32) {
-	radarr.Servarr.DeleteUnwatched(newPlexWatchList, func(id int32) error {
-		_, err := radarr.ApiClient.MovieApi.ApiV3MovieIdDelete(radarr.Servarr.Context, id, nil)
-		return err
-	})
+// Radarr: Handles the deletion and returns the IDs of movies that failed to delete
+func (radarr *RadarrService) DeleteUnwatched(moviesToDelete []float64) []float64 {
+	var failedDeletions []float64
+	for _, movieId := range moviesToDelete {
+		log.Printf("Deleting movie with ID: %v", movieId)
+		_, err := radarr.ApiClient.MovieApi.ApiV3MovieIdDelete(radarr.Servarr.Context, int32(movieId), nil)
+		if err != nil {
+			log.Printf("Error deleting movie with ID %v: %v", movieId, err)
+			failedDeletions = append(failedDeletions, movieId) // Track failed deletions
+		}
+	}
+	return failedDeletions
 }

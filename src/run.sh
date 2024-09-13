@@ -24,12 +24,6 @@ go build -o $APP_NAME
 echo "Installing the application binary..."
 sudo mv $APP_NAME $APP_DIR
 
-# Step 4: Run the application with environment variables
+# Step 4: Run the application (environment variables are already set)
 echo "Starting the application using environment variables..."
-$APP_DIR/$APP_NAME \
-  --overseer-api-key="$OVERSEER_API_KEY" \
-  --overseer-base-url="$OVERSEER_BASE_URL" \
-  --radarr-api-key="$RADARR_API_KEY" \
-  --radarr-base-url="$RADARR_BASE_URL" \
-  --sonarr-api-key="$SONARR_API_KEY" \
-  --sonarr-base-url="$SONARR_BASE_URL"
+$APP_DIR/$APP_NAME

@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"log"
 	"swaggerClientSonarr"
 )
 
@@ -23,17 +24,33 @@ func NewSonarrService(apiKey string, baseUrl string) *SonarrService {
 
 	return &SonarrService{
 		Servarr: Servarr{
-			Context:   context,
-			Watchlist: make([]int32, 0),
-			Type:      "Sonarr",
+			Context: context,
+			Type:    "Sonarr",
 		},
 		ApiClient: client,
 	}
 }
 
-func (sonarr *SonarrService) DeleteUnwatched(newPlexWatchList []int32) {
-	sonarr.Servarr.DeleteUnwatched(newPlexWatchList, func(id int32) error {
-		_, err := sonarr.ApiClient.SeriesApi.ApiV3SeriesIdDelete(sonarr.Servarr.Context, id, nil)
-		return err
-	})
+// Sonarr: Handles the deletion and returns the IDs of series that failed to delete
+func (sonarr *SonarrService) DeleteUnwatched(seriesToDelete []float64) []float64 {
+	var failedDeletions []float64
+	for _, seriesId := range seriesToDelete {
+		log.Printf("Deleting series with ID: %v", seriesId)
+		_, err := sonarr.ApiClient.SeriesApi.ApiV3SeriesIdDelete(sonarr.Servarr.Context, int32(seriesId), nil)
+		if err != nil {
+			log.Printf("Error deleting series with ID %v: %v", seriesId, err)
+			failedDeletions = append(failedDeletions, seriesId) // Track failed deletions
+		}
+	}
+	return failedDeletions
+}
+
+func (overseer *OverseerService) ProcessDeletions(radarr *RadarrService, sonarr *SonarrService) {
+	// Delete unwatched movies and update the list of MoviesToDelete
+	failedMovies := radarr.DeleteUnwatched(overseer.MoviesToDelete)
+	overseer.MoviesToDelete = failedMovies
+
+	// Delete unwatched series and update the list of SeriesToDelete
+	failedSeries := sonarr.DeleteUnwatched(overseer.SeriesToDelete)
+	overseer.SeriesToDelete = failedSeries
 }

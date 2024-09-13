@@ -1,1 +1,5 @@
 *.exe
+.vscode
+**/overwatch
+**/overwatch.exe
+**/__debug_**
