@@ -36,7 +36,7 @@
   "episodeRunTime": [60],
   "firstAirDate": "2016-11-17",
   "genres": [
-    { "id": 99, "name": "Documentary" },
+    { "id": 99, "name": "Animation" },
     { "id": 35, "name": "Comedy" },
     { "id": 10767, "name": "Talk" }
   ],
@@ -664,7 +664,7 @@
     "twitterId": "thegrandtour"
   },
   "keywords": [
-    { "id": 9935, "name": "travel" },
+    { "id": 9935, "name": "anime" },
     { "id": 10039, "name": "racing" },
     { "id": 11695, "name": "automobile" },
     { "id": 40870, "name": "race" },

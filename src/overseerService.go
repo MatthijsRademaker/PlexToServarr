@@ -18,6 +18,12 @@ type OverseerService struct {
 	SeriesToDelete          []float64
 }
 
+const regularProfileSonarr = 8
+const animeProfileSonarr = 9
+
+const regularProfileRadarr = 1
+const animeProfileRadarr = 8
+
 func NewOverseerService(apiKey string, baseUrl string) *OverseerService {
 	waitUntilServiceAvailable(baseUrl + "/status")
 
@@ -46,7 +52,7 @@ func NewOverseerService(apiKey string, baseUrl string) *OverseerService {
 	}
 }
 
-func (overseer *OverseerService) RequestEntireWatchlist() {
+func (overseer *OverseerService) RequestEntireWatchlist(firstRun bool) {
 	watchlistPage := float64(1)
 	var currentWatchListMovies []float64
 	var currentWatchListSeries []float64
@@ -64,7 +70,7 @@ func (overseer *OverseerService) RequestEntireWatchlist() {
 
 		// Process each media in the watchlist
 		for _, media := range watchlist.Results {
-			overseer.ProcessWatchlistItem(media, &currentWatchListMovies, &currentWatchListSeries)
+			overseer.ProcessWatchlistItem(media, &currentWatchListMovies, &currentWatchListSeries, firstRun)
 		}
 
 		// Break the loop if this is the last page
@@ -83,12 +89,16 @@ func (overseer *OverseerService) RequestEntireWatchlist() {
 }
 
 // ProcessWatchlistItem checks and processes a single media item in the watchlist
-func (overseer *OverseerService) ProcessWatchlistItem(media swaggerClientOverseerr.InlineResponse20013Results, currentMovies *[]float64, currentSeries *[]float64) {
+func (overseer *OverseerService) ProcessWatchlistItem(media swaggerClientOverseerr.InlineResponse20013Results, currentMovies *[]float64, currentSeries *[]float64, firstRun bool) {
 	switch media.MediaType {
 	case "tv":
-		overseer.RequestSeries(media, currentSeries)
+		overseer.RequestSeries(media, currentSeries, firstRun)
 	case "movie":
 		*currentMovies = append(*currentMovies, media.TmdbId)
+		if firstRun {
+			log.Printf("First run, assuming entire movie watchlist is already requested")
+			return
+		}
 		if !ItemInList(overseer.PreviousWatchListMovies, media.TmdbId) {
 			overseer.RequestMovie(media)
 		} else {
@@ -145,7 +155,7 @@ func ItemInList(list []float64, item float64) bool {
 	return false
 }
 
-func (overseer *OverseerService) RequestSeries(media swaggerClientOverseerr.InlineResponse20013Results, currentSeries *[]float64) {
+func (overseer *OverseerService) RequestSeries(media swaggerClientOverseerr.InlineResponse20013Results, currentSeries *[]float64, firstRun bool) {
 	log.Printf("Requesting series: %v", media.Title)
 	seriesInfo, _, err := overseer.ApiClient.TvApi.TvTvIdGet(overseer.Context, media.TmdbId, &swaggerClientOverseerr.TvApiTvTvIdGetOpts{})
 
@@ -160,6 +170,13 @@ func (overseer *OverseerService) RequestSeries(media swaggerClientOverseerr.Inli
 		log.Printf("TV series %v already requested, skipping", media.Title)
 		return
 	}
+
+	if firstRun {
+		log.Printf("First run, assuming entire watchlist is already requested")
+		return
+	}
+
+	wantedProfileId := setCorrectProfileId(seriesInfo.Keywords, seriesInfo.Genres, regularProfileSonarr, animeProfileSonarr)
 
 	var seasonNumbers []float64 = make([]float64, 0)
 
@@ -180,7 +197,7 @@ func (overseer *OverseerService) RequestSeries(media swaggerClientOverseerr.Inli
 		UserId:            float64(overseer.Me.Id),
 		RootFolder:        "/data/media/tv",
 		LanguageProfileId: float64(1),
-		ProfileId:         float64(7),
+		ProfileId:         wantedProfileId,
 	})
 
 	if err != nil {
@@ -189,8 +206,35 @@ func (overseer *OverseerService) RequestSeries(media swaggerClientOverseerr.Inli
 	}
 }
 
+// Set the profile ID based on the presence of the "anime" keyword
+func setCorrectProfileId(keywords []swaggerClientOverseerr.Keyword, genres []swaggerClientOverseerr.Genre, regularId float64, animeId float64) float64 {
+	var wantedProfileId = regularId
+	for _, keyword := range keywords {
+		if keyword.Name == "anime" {
+			wantedProfileId = float64(animeId)
+			break
+		}
+	}
+
+	for _, genre := range genres {
+		if genre.Name == "Animation" {
+			wantedProfileId = float64(animeId)
+			break
+		}
+	}
+	return wantedProfileId
+}
+
 func (overseer *OverseerService) RequestMovie(media swaggerClientOverseerr.InlineResponse20013Results) {
 	log.Printf("Requesting movie: %v", media.Title)
+	movieInfo, _, err := overseer.ApiClient.MoviesApi.MovieMovieIdGet(overseer.Context, media.TmdbId, &swaggerClientOverseerr.MoviesApiMovieMovieIdGetOpts{})
+
+	if err != nil {
+		log.Printf("Overseerr err: %v", err)
+		return
+	}
+
+	wantedProfileId := setCorrectProfileId(movieInfo.Keywords, movieInfo.Genres, regularProfileRadarr, animeProfileRadarr)
 
 	_, res, err := overseer.ApiClient.RequestApi.RequestPost(overseer.Context, swaggerClientOverseerr.RequestBody{
 		MediaType: "movie",
@@ -198,6 +242,7 @@ func (overseer *OverseerService) RequestMovie(media swaggerClientOverseerr.Inlin
 		Is4k:      false,
 		ServerId:  float64(0),
 		UserId:    float64(overseer.Me.Id),
+		ProfileId: wantedProfileId,
 	})
 
 	if err != nil {

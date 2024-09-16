@@ -39,5 +39,6 @@ type MovieDetails struct {
 	Collection          *MovieDetailsCollection           `json:"collection,omitempty"`
 	ExternalIds         *ExternalIds                      `json:"externalIds,omitempty"`
 	MediaInfo           *MediaInfo                        `json:"mediaInfo,omitempty"`
+	Keywords            []Keyword                         `json:"keywords,omitempty"`
 	WatchProviders      [][]WatchProvidersInner           `json:"watchProviders,omitempty"`
 }

@@ -4246,9 +4246,9 @@
     {
       "uuid": "b5d2e58f-70de-4de1-a39e-038e06ace34d",
       "type": "http",
-      "documentation": "Get movie details",
+      "documentation": "Get movie details for anime",
       "method": "get",
-      "endpoint": "movie/:movieId",
+      "endpoint": "movie/12924",
       "responses": [
         {
           "uuid": "7c5fe834-0846-44b6-8d6d-9aa4462669ea",
@@ -4262,8 +4262,8 @@
               "value": "application/json"
             }
           ],
-          "bodyType": "INLINE",
-          "filePath": "",
+          "bodyType": "FILE",
+          "filePath": "/home/matthijs/Repos/Overwatch/PlexToServarr/Mockoon/mocks/overseer/get-movie-info-by-id-anime-response.json",
           "databucketID": "",
           "sendFileAsBody": false,
           "rules": [],
@@ -5708,13 +5708,13 @@
     {
       "uuid": "e94ef0d5-95a6-4b1b-96e4-c49b026a32d8",
       "type": "http",
-      "documentation": "Get TV details for id 2",
+      "documentation": "Get TV details for anime",
       "method": "get",
-      "endpoint": "tv/4",
+      "endpoint": "tv/67557",
       "responses": [
         {
           "uuid": "6caf7e2b-912e-4f7e-bc73-28be0d77b3c8",
-          "body": "{\n  \"id\": 123,\n  \"backdropPath\": \"string\",\n  \"posterPath\": \"string\",\n  \"contentRatings\": {\n    \"results\": [\n      {\n        \"iso_3166_1\": \"US\",\n        \"rating\": \"TV-14\"\n      }\n    ]\n  },\n  \"createdBy\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\",\n      \"gender\": 0,\n      \"profilePath\": \"string\"\n    }\n  ],\n  \"episodeRunTime\": [\n    0\n  ],\n  \"firstAirDate\": \"string\",\n  \"genres\": [\n    {\n      \"id\": 1,\n      \"name\": \"Adventure\"\n    }\n  ],\n  \"homepage\": \"string\",\n  \"inProduction\": true,\n  \"languages\": [\n    \"string\"\n  ],\n  \"lastAirDate\": \"string\",\n  \"lastEpisodeToAir\": {\n    \"id\": 0,\n    \"name\": \"string\",\n    \"airDate\": \"string\",\n    \"episodeNumber\": 0,\n    \"overview\": \"string\",\n    \"productionCode\": \"string\",\n    \"seasonNumber\": 0,\n    \"showId\": 0,\n    \"stillPath\": \"string\",\n    \"voteAverage\": 0,\n    \"voteCount\": 0\n  },\n  \"name\": \"string\",\n  \"nextEpisodeToAir\": {\n    \"id\": 0,\n    \"name\": \"string\",\n    \"airDate\": \"string\",\n    \"episodeNumber\": 0,\n    \"overview\": \"string\",\n    \"productionCode\": \"string\",\n    \"seasonNumber\": 0,\n    \"showId\": 0,\n    \"stillPath\": \"string\",\n    \"voteAverage\": 0,\n    \"voteCount\": 0\n  },\n  \"networks\": [\n    {\n      \"id\": 1,\n      \"logoPath\": \"string\",\n      \"originCountry\": \"string\",\n      \"name\": \"string\"\n    }\n  ],\n  \"numberOfEpisodes\": 0,\n  \"numberOfSeason\": 0,\n  \"originCountry\": [\n    \"string\"\n  ],\n  \"originalLanguage\": \"string\",\n  \"originalName\": \"string\",\n  \"overview\": \"string\",\n  \"popularity\": 0,\n  \"productionCompanies\": [\n    {\n      \"id\": 1,\n      \"logoPath\": \"string\",\n      \"originCountry\": \"string\",\n      \"name\": \"string\"\n    }\n  ],\n  \"productionCountries\": [\n    {\n      \"iso_3166_1\": \"string\",\n      \"name\": \"string\"\n    }\n  ],\n  \"spokenLanguages\": [\n    {\n      \"englishName\": \"English\",\n      \"iso_639_1\": \"en\",\n      \"name\": \"English\"\n    }\n  ],\n  \"seasons\": [\n    {\n      \"id\": 0,\n      \"airDate\": \"string\",\n      \"episodeCount\": 0,\n      \"name\": \"string\",\n      \"overview\": \"string\",\n      \"posterPath\": \"string\",\n      \"seasonNumber\": 1,\n      \"episodes\": [\n        {\n          \"id\": 0,\n          \"name\": \"string\",\n          \"airDate\": \"string\",\n          \"episodeNumber\": 0,\n          \"overview\": \"string\",\n          \"productionCode\": \"string\",\n          \"seasonNumber\": 0,\n          \"showId\": 0,\n          \"stillPath\": \"string\",\n          \"voteAverage\": 0,\n          \"voteCount\": 0\n        }\n      ]\n    }\n  ],\n  \"status\": \"string\",\n  \"tagline\": \"string\",\n  \"type\": \"string\",\n  \"voteAverage\": 0,\n  \"voteCount\": 0,\n  \"credits\": {\n    \"cast\": [\n      {\n        \"id\": 123,\n        \"castId\": 1,\n        \"character\": \"Some Character Name\",\n        \"creditId\": \"string\",\n        \"gender\": 0,\n        \"name\": \"Some Persons Name\",\n        \"order\": 0,\n        \"profilePath\": \"string\"\n      }\n    ],\n    \"crew\": [\n      {\n        \"id\": 123,\n        \"creditId\": \"string\",\n        \"gender\": 0,\n        \"name\": \"Some Persons Name\",\n        \"job\": \"string\",\n        \"department\": \"string\",\n        \"profilePath\": \"string\"\n      }\n    ]\n  },\n  \"externalIds\": {\n    \"facebookId\": \"string\",\n    \"freebaseId\": \"string\",\n    \"freebaseMid\": \"string\",\n    \"imdbId\": \"string\",\n    \"instagramId\": \"string\",\n    \"tvdbId\": 4,\n    \"tvrageId\": 0,\n    \"twitterId\": \"string\"\n  },\n  \"keywords\": [\n    {\n      \"id\": 1,\n      \"name\": \"anime\"\n    }\n  ],\n  \"mediaInfo\": {\n    \"id\": 0,\n    \"tmdbId\": 1,\n    \"tvdbId\": 0,\n    \"status\": 0,\n    \"requests\": [\n      {\n        \"id\": 123,\n        \"status\": 0,\n        \"media\": \"string\",\n        \"createdAt\": \"2020-09-12T10:00:27.000Z\",\n        \"updatedAt\": \"2020-09-12T10:00:27.000Z\",\n        \"requestedBy\": {\n          \"id\": 1,\n          \"email\": \"hey@itsme.com\",\n          \"username\": \"string\",\n          \"plexToken\": \"string\",\n          \"plexUsername\": \"string\",\n          \"userType\": 1,\n          \"permissions\": 0,\n          \"avatar\": \"string\",\n          \"createdAt\": \"2020-09-02T05:02:23.000Z\",\n          \"updatedAt\": \"2020-09-02T05:02:23.000Z\",\n          \"requestCount\": 5\n        },\n        \"modifiedBy\": {\n          \"id\": 1,\n          \"email\": \"hey@itsme.com\",\n          \"username\": \"string\",\n          \"plexToken\": \"string\",\n          \"plexUsername\": \"string\",\n          \"userType\": 1,\n          \"permissions\": 0,\n          \"avatar\": \"string\",\n          \"createdAt\": \"2020-09-02T05:02:23.000Z\",\n          \"updatedAt\": \"2020-09-02T05:02:23.000Z\",\n          \"requestCount\": 5\n        },\n        \"is4k\": false,\n        \"serverId\": 0,\n        \"profileId\": 0,\n        \"rootFolder\": \"string\"\n      }\n    ],\n    \"createdAt\": \"2020-09-12T10:00:27.000Z\",\n    \"updatedAt\": \"2020-09-12T10:00:27.000Z\"\n  },\n  \"watchProviders\": [\n    [\n      {\n        \"iso_3166_1\": \"string\",\n        \"link\": \"string\",\n        \"buy\": [\n          {\n            \"displayPriority\": 0,\n            \"logoPath\": \"string\",\n            \"id\": 0,\n            \"name\": \"string\"\n          }\n        ],\n        \"flatrate\": [\n          {\n            \"displayPriority\": 0,\n            \"logoPath\": \"string\",\n            \"id\": 0,\n            \"name\": \"string\"\n          }\n        ]\n      }\n    ]\n  ]\n}",
+          "body": "",
           "latency": 0,
           "statusCode": 200,
           "label": "TV details",
@@ -5724,8 +5724,8 @@
               "value": "application/json"
             }
           ],
-          "bodyType": "INLINE",
-          "filePath": "",
+          "bodyType": "FILE",
+          "filePath": "/home/matthijs/Repos/Overwatch/PlexToServarr/Mockoon/mocks/overseer/get-tv-info-by-id-anime-response.json",
           "databucketID": "",
           "sendFileAsBody": false,
           "rules": [],
@@ -5742,7 +5742,7 @@
     {
       "uuid": "d81a7d1e-e58d-4c6c-a969-dc8d11d67a5c",
       "type": "http",
-      "documentation": "Get TV details for id 69740",
+      "documentation": "Get TV details for regular",
       "method": "get",
       "endpoint": "tv/69740",
       "responses": [
@@ -5754,9 +5754,43 @@
           "label": "TV details",
           "headers": [],
           "bodyType": "FILE",
-          "filePath": "/home/matthijs/Repos/Overwatch/PlexToServarr/Mockoon/mocks/overseer/get-tv-infor-ozark-response.json",
+          "filePath": "/home/matthijs/Repos/Overwatch/PlexToServarr/Mockoon/mocks/overseer/get-tv-info-by-id-regular-response.json",
           "databucketID": "",
           "sendFileAsBody": true,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "8e7a83fc-f6bb-4571-8219-d49f572c2a1c",
+      "type": "http",
+      "documentation": "Get movie details for regular",
+      "method": "get",
+      "endpoint": "movie/533535",
+      "responses": [
+        {
+          "uuid": "203f2aa0-8957-4bfb-9f9b-31bc047eb897",
+          "body": "\"\"",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Movie details",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "/home/matthijs/Repos/Overwatch/PlexToServarr/Mockoon/mocks/overseer/get-movie-info-by-id-regular-response.json",
+          "databucketID": "",
+          "sendFileAsBody": false,
           "rules": [],
           "rulesOperator": "OR",
           "disableTemplating": false,
@@ -6445,6 +6479,10 @@
     {
       "type": "route",
       "uuid": "d81a7d1e-e58d-4c6c-a969-dc8d11d67a5c"
+    },
+    {
+      "type": "route",
+      "uuid": "8e7a83fc-f6bb-4571-8219-d49f572c2a1c"
     }
   ],
   "proxyMode": false,

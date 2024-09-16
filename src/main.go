@@ -69,14 +69,12 @@ func main() {
 	radarr := NewRadarrService(config.Radarr.APIKey, config.Radarr.BaseURL)
 	sonarr := NewSonarrService(config.Sonarr.APIKey, config.Sonarr.BaseURL)
 
-	overseer.RequestEntireWatchlist()
-	radarr.DeleteUnwatched(overseer.MoviesToDelete)
-	sonarr.DeleteUnwatched(overseer.SeriesToDelete)
+	overseer.RequestEntireWatchlist(true)
 
 	// Set up cron job
 	c := cron.New()
 	c.AddFunc("*/5 * * * *", func() {
-		overseer.RequestEntireWatchlist()
+		overseer.RequestEntireWatchlist(false)
 		overseer.ProcessDeletions(radarr, sonarr)
 	})
 	c.Start()
